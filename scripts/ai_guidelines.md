@@ -4,10 +4,12 @@ This document guides AI (like Claude) when generating or modifying the README.
 
 ## 🎯 Core Principles
 
-1. **Be Intelligent, Not Rigid**: Choose what to display based on actual data
-2. **Stay Safe**: Only use helpers from `constants.py` for images/badges
-3. **Be Relevant**: Show what matters, hide what doesn't
-4. **Stay Fresh**: Emphasize recent, active contributions
+1. **Be Concise**: GitHub already shows bio, followers, repo count - don't repeat it
+2. **Be Intelligent, Not Rigid**: Choose what to display based on actual data
+3. **Stay Safe**: Only use helpers from `constants.py` for images/badges
+4. **Be Relevant**: Show what matters, hide what doesn't
+5. **Stay Fresh**: Emphasize recent, active contributions
+6. **Less is More**: Keep it scannable - people won't read walls of text
 
 ## 🛠️ Available Tools
 
@@ -185,70 +187,83 @@ readme += "Python, JavaScript, Go"  # Static list
 ### DO Feel Free To:
 
 1. **Reorganize sections** based on what's most interesting
-2. **Add emojis** that fit the context (but don't overdo it)
+2. **Add emojis** strategically (1-2 per section, not everywhere)
 3. **Choose colors** that match the brand/technology
-4. **Highlight recent work** in creative ways
-5. **Write engaging descriptions** from the data
-6. **Skip empty sections** (don't show "Recent Activity: None")
-7. **Adjust heading levels** for better flow
-8. **Group related items** intelligently
-9. **Add context** from commit messages, PR titles
-10. **Make it personal** to the user's actual work
+4. **Highlight Coder work** prominently (this is unique!)
+5. **Skip empty sections** (don't show "Recent Activity: None")
+6. **Group related items** intelligently
+7. **Make it personal** to the user's actual work
+8. **Keep it SHORT** - 3-4 sections max
+9. **Use badges over text** - visual > verbose
+10. **Let stats speak** - graphs instead of paragraphs
 
 ### DON'T:
 
 1. **Invent fake data** (no made-up stats)
-2. **Use unverified image URLs**
-3. **Break markdown syntax**
-4. **Add external dependencies**
-5. **Make it too long** (keep it scannable)
-6. **Copy exactly** from templates
+2. **Use unverified image URLs** (only constants.py helpers!)
+3. **Repeat profile info** (no name, bio, followers - already visible)
+4. **Write paragraphs** (use bullets, badges, visuals)
+5. **List everything** (be selective - what's impressive?)
+6. **Make it long** (keep under 100 lines total)
+7. **Be generic** (focus on Coder/unique work)
 
 ## 🎨 Style Guidelines
 
 ### Tone
 - Professional but friendly
 - Enthusiastic about Coder ecosystem
-- Technical but accessible
+- Direct and to the point
 
 ### Structure
-- Clear hierarchy (H1 → H2 → H3)
-- Scannable sections
-- Visual breaks with `---`
-- Balanced text and images
+- **Minimal text** - mostly visual (badges, stats)
+- Clear hierarchy but not too many levels
+- Visual elements > paragraphs
+- White space is good
 
 ### Content
-- Lead with most impressive/recent work
-- Show, don't just tell
-- Use active voice
-- Keep paragraphs short
+- Lead with most impressive work (Coder Registry!)
+- Show, don't tell (badges > descriptions)
+- Skip what GitHub already shows:
+  - ❌ Name/username (already at top of profile)
+  - ❌ Bio (already shown)
+  - ❌ Follower/following counts (already visible)
+  - ❌ Total repo count (already shown)
+  - ❌ Location, company, etc. (in sidebar)
+- Include what's unique:
+  - ✅ Coder Registry contributions (specific!)
+  - ✅ Tech stack badges
+  - ✅ GitHub stats visualizations
+  - ✅ Notable recent activity
+  - ✅ Social links
 
 ## 📊 Example Decision Tree
 
 ```
-Is user active in Coder Registry?
-├─ Yes → Prominent Coder section at top
-│   ├─ Recent PRs? → Show list with status
-│   ├─ Recent commits? → Show with messages
-│   └─ Add Coder badge to header
-└─ No → General open source section
+README Structure (keep it minimal!):
 
-What are primary languages?
-├─ From GitHub API language stats
-├─ Cross-reference with COMMON_TECH
-├─ Generate badges for top 5-8
-└─ Group by usage level
+1. Header (optional - GitHub shows this already)
+   ├─ Skip name/bio (already visible)
+   └─ Maybe: Quick tagline or focus (1 line max)
 
-Any recent activity?
-├─ Filter to meaningful events
-├─ Format by type (PR/Issue/Release)
-├─ Show 8-10 most interesting
-└─ Skip if older than 3 months
+2. Coder Registry Work (MAIN FOCUS - 2-3 lines)
+   ├─ Prominent badge/link
+   ├─ Quick highlight of contribution (not a list!)
+   └─ Example: "Building Terraform modules for cloud dev environments"
 
-Social links available?
-├─ Check USER_SOCIAL_LINKS
-├─ Generate badges with proper icons
-└─ Add to footer
+3. Tech Stack (badges only - no text!)
+   ├─ Show top 6-8 technologies
+   ├─ One row of badges
+   └─ Use constants.py helpers
+
+4. GitHub Stats (visual - let images do the talking)
+   ├─ Stats graph
+   ├─ Maybe streak or languages
+   └─ Max 2-3 stat images
+
+5. Connect (1 line of social badges)
+   └─ Twitter, Discord, Email badges
+
+Total: ~30-60 lines max, mostly badges/images
 ```
 
 ## 🔄 Iteration

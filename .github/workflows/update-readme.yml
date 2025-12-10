@@ -48,19 +48,24 @@ jobs:
           coder-template-name: "cat-readme-task"
           coder-task-name-prefix: "readme-gen"
           coder-task-prompt: |
-            Update the GitHub profile README for DevelopmentCats/DevelopmentCats.
+            Generate a concise, impactful GitHub profile README for DevelopmentCats/DevelopmentCats.
             
-            Steps:
+            Process:
             1. cd ~/projects/DevelopmentCats
-            2. Install dependencies: pip install -r requirements.txt
-            3. Run the generator: python3 scripts/generate_readme.py
-            4. Review the generated README.md file
-            5. Commit and push changes:
-               git add README.md data/
-               git commit -m "🤖 Auto-update README - $(date +'%Y-%m-%d')"
-               git push
+            2. Run: python3 scripts/generate_readme.py (fetches data → data/github_stats.json)
+            3. Read data/github_stats.json for stats
+            4. Read scripts/ai_guidelines.md for guidance
+            5. Create a README.md that is:
+               ✅ CONCISE - GitHub already shows bio, followers, repo count, etc.
+               ✅ FOCUSED - Highlight Coder Registry work (unique!)
+               ✅ VISUAL - Badges for tech stack (use constants.py helpers)
+               ✅ RELEVANT - Only show what's interesting/impressive
+               ✅ SCANNABLE - Easy to digest in 10 seconds
+               ❌ NOT verbose or listing basic profile info
+               ❌ NOT showing what GitHub already displays
+            6. Commit: git add README.md data/ && git commit -m "🤖 Auto-update README" && git push
             
-            If any step fails, debug the issue and fix it before continuing.
+            Keep it punchy and impressive - less is more!
           github-user-id: ${{ steps.get-user-id.outputs.github_user_id }}
           github-token: ${{ github.token }}
           # Use run number to create unique task names (readme-gen-123, readme-gen-124, etc.)

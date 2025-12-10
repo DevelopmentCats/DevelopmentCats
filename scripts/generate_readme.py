@@ -298,8 +298,14 @@ Use the provided data to create an informative and visually appealing README.
 
 
 def generate_readme(github_data: Dict[str, Any]) -> str:
-    """Generate the README content."""
-    print("Generating README content...")
+    """
+    Generate README data for AI to use.
+    
+    This function now focuses on preparing clean data for the AI to use
+    when crafting the actual README. The AI has creative freedom to
+    format and present this information in an engaging way.
+    """
+    print("Preparing README data for AI generation...")
     
     user = github_data["user"]
     repos = github_data["repos"]
@@ -310,166 +316,104 @@ def generate_readme(github_data: Dict[str, Any]) -> str:
     language_stats = get_language_stats(repos)
     recent_activity = get_recent_activity(events)
     
-    # Save data for reference
+    # Save comprehensive data for AI to use
+    readme_data = {
+        "user": {
+            "username": user.get("login"),
+            "name": user.get("name"),
+            "bio": user.get("bio"),
+            "public_repos": user.get("public_repos"),
+            "followers": user.get("followers"),
+            "following": user.get("following"),
+        },
+        "coder_stats": coder_stats,
+        "language_stats": language_stats,
+        "recent_activity": recent_activity,
+        "top_languages": list(language_stats.keys())[:8],
+        "updated_at": datetime.utcnow().isoformat(),
+        "instructions": {
+            "note": "Use constants.py helpers for all badges - they guarantee working URLs",
+            "guidelines": "Read scripts/ai_guidelines.md for creative patterns",
+            "social_links": "Defined in constants.USER_SOCIAL_LINKS",
+            "tech_reference": "Use constants.COMMON_TECH as inspiration"
+        }
+    }
+    
     with open(DATA_DIR / "github_stats.json", "w") as f:
-        json.dump({
-            "coder_stats": coder_stats,
-            "language_stats": language_stats,
-            "recent_activity": recent_activity,
-            "updated_at": datetime.utcnow().isoformat()
-        }, f, indent=2)
+        json.dump(readme_data, f, indent=2)
     
-    # Get top languages (limit to 8)
-    top_languages = list(language_stats.keys())[:8]
+    print(f"✅ Data saved to {DATA_DIR / 'github_stats.json'}")
+    print(f"   - {coder_stats['total_prs']} Coder Registry PRs")
+    print(f"   - {len(recent_activity)} recent activities")
+    print(f"   - {len(language_stats)} languages detected")
+    print("\n🎨 AI can now generate README with this data!")
     
-    # Build README content
-    readme = f"""<h1 align="center">Hi 👋, I'm DevelopmentCats</h1>
-<h3 align="center">Full-Stack Developer | Coder Registry Contributor</h3>
+    # Return a simple confirmation instead of a full README
+    # The AI will generate the actual README using the data file
+    return f"""# Data Generated Successfully
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=developmentcats&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
-  <a href="https://github.com/coder/registry"><img src="https://img.shields.io/badge/Coder-Registry-00ADD8?style=flat&logo=coder&logoColor=white" alt="Coder Registry" /></a>
-</p>
+The GitHub stats have been saved to `data/github_stats.json`.
 
----
+## Summary:
+- **Coder Registry**: {coder_stats['total_prs']} PRs, {coder_stats['total_commits']} commits
+- **Languages**: {', '.join(list(language_stats.keys())[:5])}
+- **Recent Activity**: {len(recent_activity)} events
 
-## 🚀 What I'm Working On
+## Next Steps:
+The AI should now read `data/github_stats.json` and create an engaging README.md file.
 
-I'm actively contributing to the **[Coder Registry](https://github.com/coder/registry)**, building Terraform modules that help developers create better cloud development environments.
+## Guidelines:
+- Use helpers from `scripts/constants.py` for all badges
+- Read `scripts/ai_guidelines.md` for creative patterns
+- Make it visually appealing and not generic
+- Highlight Coder Registry work prominently
+- Show personality!
 
+Generated at: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}
 """
-
-    # Add Coder Registry stats if available
-    if coder_stats["total_prs"] > 0 or coder_stats["total_commits"] > 0:
-        readme += f"""### 📊 Coder Registry Contributions
-
-"""
-        
-        if coder_stats["prs"]:
-            readme += "**Recent Pull Requests:**\n\n"
-            for pr in coder_stats["prs"][:3]:
-                status_emoji = "✅" if pr["state"] == "closed" else "🔄"
-                readme += f"- {status_emoji} [{pr['title']}]({pr['url']}) · {format_date(pr['created_at'])}\n"
-            readme += "\n"
-        
-        if coder_stats["commits"]:
-            readme += "**Recent Commits:**\n\n"
-            for commit in coder_stats["commits"][:5]:
-                # Clean up commit message (first line only)
-                message = commit["message"].split("\n")[0]
-                if len(message) > 60:
-                    message = message[:57] + "..."
-                readme += f"- `{commit['sha']}` {message}\n"
-            readme += "\n"
-
-    # Recent Activity
-    readme += """---
-
-## 📈 Recent Activity
-
-"""
-    
-    for activity in recent_activity[:8]:
-        line = f"- {activity['icon']} {activity['description']}"
-        if "url" in activity:
-            # Extract last part for cleaner display
-            line = f"- {activity['icon']} {activity['description']}"
-        line += f" · *{format_date(activity['date'])}*"
-        readme += line + "\n"
-    
-    readme += """
----
-
-## 🛠️ Tech Stack
-
-"""
-
-    # Use predefined tech stack from constants (all verified)
-    for category, tools in TECH_STACK.items():
-        readme += f"### {category}\n\n"
-        for name, slug, color in tools:
-            readme += get_skill_badge(name, slug, color) + " "
-        readme += "\n\n"
-
-    # GitHub Stats (using helper functions for consistent, reliable URLs)
-    readme += f"""---
-
-## 📊 GitHub Statistics
-
-<p align="center">
-  {get_stats_image(GITHUB_USERNAME, "stats")}
-</p>
-
-<p align="center">
-  {get_stats_image(GITHUB_USERNAME, "streak")}
-</p>
-
-<p align="center">
-  {get_stats_image(GITHUB_USERNAME, "languages")}
-</p>
-
----
-
-## 🤝 Connect With Me
-
-<p align="left">
-"""
-    
-    # Add social links from constants
-    for platform, url in SOCIAL_LINKS:
-        readme += "  " + get_social_badge(platform, GITHUB_USERNAME, url) + "\n"
-    
-    readme += """</p>
-
----
-
-## 💡 Featured Projects
-
-Check out my portfolio at **[developmentcats.github.io](https://developmentcats.github.io)**
-
----
-
-<p align="center">
-  <i>✨ This README is automatically updated every 6 hours using GitHub Actions and Coder's create-task-action ✨</i>
-</p>
-
-<p align="center">
-  <sub>Last updated: {datetime.utcnow().strftime('%B %d, %Y at %H:%M UTC')}</sub>
-</p>
-"""
-
-    return readme
 
 
 def main():
-    """Main execution function."""
+    """
+    Main execution: Fetch GitHub data and prepare it for AI generation.
+    
+    This script now focuses on data collection, not README generation.
+    The AI (Claude) will use this data to create a creative, engaging README.
+    """
     try:
-        print("=" * 60)
-        print("GitHub Profile README Generator")
-        print("=" * 60)
+        print("=" * 70)
+        print("GitHub Data Fetcher - README Generator Helper")
+        print("=" * 70)
+        print()
         
-        # Fetch data
+        # Fetch fresh data from GitHub
+        print("📡 Fetching GitHub data...")
         github_data = fetch_github_data()
         
-        # Save raw data
+        # Save raw data for reference
+        print("💾 Saving raw data...")
         with open(DATA_DIR / "github_data.json", "w") as f:
             json.dump(github_data, f, indent=2)
         
-        # Generate README
-        readme_content = generate_readme(github_data)
+        # Process and prepare data for AI
+        print("🔄 Processing statistics...")
+        status_message = generate_readme(github_data)
         
-        # Write README
-        with open("README.md", "w", encoding="utf-8") as f:
-            f.write(readme_content)
-        
-        print("=" * 60)
-        print("✅ README.md successfully generated!")
-        print("=" * 60)
+        print()
+        print("=" * 70)
+        print(status_message)
+        print("=" * 70)
+        print()
+        print("✨ Data ready! AI can now generate the README.")
+        print("   Read: data/github_stats.json")
+        print("   Guidelines: scripts/ai_guidelines.md")
+        print("   Helpers: scripts/constants.py")
+        print()
         
         return 0
     
     except Exception as e:
-        print(f"❌ Error generating README: {e}", file=sys.stderr)
+        print(f"❌ Error: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
         return 1
