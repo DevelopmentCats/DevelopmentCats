@@ -63,7 +63,8 @@ jobs:
             If any step fails, debug the issue and fix it before continuing.
           github-user-id: ${{ steps.get-user-id.outputs.github_user_id }}
           github-token: ${{ github.token }}
-          github-issue-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          # Dummy issue URL (required by action but not used since comment-on-issue is false)
+          github-issue-url: ${{ github.server_url }}/${{ github.repository }}/issues/1
           comment-on-issue: false
 
       - name: Output Task Info
