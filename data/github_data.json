@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats/releases{/id}",
       "deployments_url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats/deployments",
       "created_at": "2025-05-23T19:28:05Z",
-      "updated_at": "2025-12-10T20:18:06Z",
-      "pushed_at": "2025-12-10T20:18:03Z",
+      "updated_at": "2025-12-10T20:35:45Z",
+      "pushed_at": "2025-12-10T20:35:41Z",
       "git_url": "git://github.com/DevelopmentCats/DevelopmentCats.git",
       "ssh_url": "git@github.com:DevelopmentCats/DevelopmentCats.git",
       "clone_url": "https://github.com/DevelopmentCats/DevelopmentCats.git",
@@ -6212,6 +6212,150 @@
   ],
   "events": [
     {
+      "id": "6629861323",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 989271370,
+        "name": "DevelopmentCats/DevelopmentCats",
+        "url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats"
+      },
+      "payload": {
+        "repository_id": 989271370,
+        "push_id": 28923572674,
+        "ref": "refs/heads/main",
+        "head": "1b32b46edb032407e55f48fa8b414100c7593f69",
+        "before": "8125e15efb6e3a5d58e8aba02b427807f43716ec"
+      },
+      "public": true,
+      "created_at": "2025-12-10T20:35:42Z"
+    },
+    {
+      "id": "5225820444",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "review": {
+          "id": 3564346789,
+          "node_id": "PRR_kwDOGkVX1s7Uc52l",
+          "user": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": null,
+          "commit_id": "eaf3d2de2c8966335e54ef43203f19958fccb91e",
+          "submitted_at": "2025-12-10T20:24:14Z",
+          "state": "approved",
+          "html_url": "https://github.com/coder/coder/pull/21198#pullrequestreview-3564346789",
+          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21198",
+          "_links": {
+            "html": {
+              "href": "https://github.com/coder/coder/pull/21198#pullrequestreview-3564346789"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/coder/coder/pulls/21198"
+            }
+          },
+          "updated_at": "2025-12-10T20:24:46Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/21198",
+          "id": 3087471763,
+          "number": 21198,
+          "head": {
+            "ref": "feat/add-issue-triage-workflow",
+            "sha": "eaf3d2de2c8966335e54ef43203f19958fccb91e",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "ed3bb76c9bbab17f2fbbdd021c63b478c4742587",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2025-12-10T20:24:15Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "6629592897",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 989271370,
+        "name": "DevelopmentCats/DevelopmentCats",
+        "url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats"
+      },
+      "payload": {
+        "repository_id": 989271370,
+        "push_id": 28923303894,
+        "ref": "refs/heads/main",
+        "head": "8125e15efb6e3a5d58e8aba02b427807f43716ec",
+        "before": "38a2d669d57c2f830f1b75a26c06904fc972a8e9"
+      },
+      "public": true,
+      "created_at": "2025-12-10T20:23:05Z"
+    },
+    {
       "id": "5225739394",
       "type": "PullRequestEvent",
       "actor": {
@@ -6405,7 +6549,7 @@
           "number": 21198,
           "head": {
             "ref": "feat/add-issue-triage-workflow",
-            "sha": "93f7b20a5efe58c28687138b150f06783e9232d1",
+            "sha": "eaf3d2de2c8966335e54ef43203f19958fccb91e",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -6414,7 +6558,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "ed3bb76c9bbab17f2fbbdd021c63b478c4742587",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -6492,7 +6636,7 @@
           "number": 21198,
           "head": {
             "ref": "feat/add-issue-triage-workflow",
-            "sha": "93f7b20a5efe58c28687138b150f06783e9232d1",
+            "sha": "eaf3d2de2c8966335e54ef43203f19958fccb91e",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -6501,7 +6645,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "ed3bb76c9bbab17f2fbbdd021c63b478c4742587",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -6565,7 +6709,7 @@
           "number": 21198,
           "head": {
             "ref": "feat/add-issue-triage-workflow",
-            "sha": "93f7b20a5efe58c28687138b150f06783e9232d1",
+            "sha": "eaf3d2de2c8966335e54ef43203f19958fccb91e",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -6574,7 +6718,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "ed3bb76c9bbab17f2fbbdd021c63b478c4742587",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -10671,6 +10815,38 @@
       }
     },
     {
+      "id": "6497612024",
+      "type": "DeleteEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "ref": "cat/antigravity-protocol",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/cat/antigravity-protocol",
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2025-12-05T13:10:00Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
       "id": "6497611970",
       "type": "PushEvent",
       "actor": {
@@ -10692,38 +10868,6 @@
         "ref": "refs/heads/main",
         "head": "8e0516a19cfe171e048b37c324966f7db90dc393",
         "before": "770fdb377c78c93c74c2cf7c242e284435a5572c"
-      },
-      "public": true,
-      "created_at": "2025-12-05T13:10:00Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "6497612024",
-      "type": "DeleteEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "ref": "cat/antigravity-protocol",
-        "ref_type": "branch",
-        "full_ref": "refs/heads/cat/antigravity-protocol",
-        "pusher_type": "user"
       },
       "public": true,
       "created_at": "2025-12-05T13:10:00Z",
@@ -14116,249 +14260,7 @@
         "url": "https://api.github.com/orgs/coder",
         "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
       }
-    },
-    {
-      "id": "5101995673",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165361",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165361,
-          "node_id": "PRRC_kwDOGkVX1s6aYslx",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Issue:** Missing error handling directives. Shell scripts should fail fast on errors to prevent cascading failures.\n\nWithout `set -euo pipefail`, if any command fails (like accessing an undefined variable), the script continues executing, potentially with invalid state.\n\n```suggestion\n        run: |\n          set -euo pipefail\n          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165361",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165361"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165361"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165361/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 61,
-          "position": 61,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101923795",
-      "type": "PullRequestEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "labeled",
-        "number": 21103,
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        },
-        "label": {
-          "id": 9770974218,
-          "node_id": "LA_kwDOGkVX1s8AAAACRmU8Cg",
-          "url": "https://api.github.com/repos/coder/coder/labels/code-review",
-          "name": "code-review",
-          "color": "F5B018",
-          "default": false,
-          "description": ""
-        },
-        "labels": [
-          {
-            "id": 9770974218,
-            "node_id": "LA_kwDOGkVX1s8AAAACRmU8Cg",
-            "url": "https://api.github.com/repos/coder/coder/labels/code-review",
-            "name": "code-review",
-            "color": "F5B018",
-            "default": false,
-            "description": ""
-          }
-        ]
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:35:26Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101921355",
-      "type": "PullRequestEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "unlabeled",
-        "number": 21103,
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        },
-        "label": null,
-        "labels": []
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:32:31Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
     }
   ],
-  "fetched_at": "2025-12-10T20:22:37.788229"
+  "fetched_at": "2025-12-10T20:39:35.980794"
 }

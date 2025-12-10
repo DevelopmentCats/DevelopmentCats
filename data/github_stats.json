@@ -1,4 +1,12 @@
 {
+  "user": {
+    "username": "DevelopmentCats",
+    "name": "DevCats",
+    "bio": "Coding ideas into reality!",
+    "public_repos": 60,
+    "followers": 2,
+    "following": 2
+  },
   "coder_stats": {
     "prs": [
       {
@@ -108,5 +116,21 @@
       "url": "https://github.com/coder/agentapi/issues/155"
     }
   ],
-  "updated_at": "2025-12-10T20:22:37.868270"
+  "top_languages": [
+    "JavaScript",
+    "Python",
+    "Dockerfile",
+    "TypeScript",
+    "Shell",
+    "HTML",
+    "Vue",
+    "HCL"
+  ],
+  "updated_at": "2025-12-10T20:39:36.017823",
+  "instructions": {
+    "note": "Use constants.py helpers for all badges - they guarantee working URLs",
+    "guidelines": "Read scripts/ai_guidelines.md for creative patterns",
+    "social_links": "Defined in constants.USER_SOCIAL_LINKS",
+    "tech_reference": "Use constants.COMMON_TECH as inspiration"
+  }
 }
