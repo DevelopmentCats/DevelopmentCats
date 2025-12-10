@@ -63,8 +63,8 @@ jobs:
             If any step fails, debug the issue and fix it before continuing.
           github-user-id: ${{ steps.get-user-id.outputs.github_user_id }}
           github-token: ${{ github.token }}
-          # Dummy issue URL (required by action but not used since comment-on-issue is false)
-          github-issue-url: ${{ github.server_url }}/${{ github.repository }}/issues/1
+          # Use run number to create unique task names (readme-gen-123, readme-gen-124, etc.)
+          github-issue-url: ${{ github.server_url }}/${{ github.repository }}/issues/${{ github.run_number }}
           comment-on-issue: false
 
       - name: Output Task Info
