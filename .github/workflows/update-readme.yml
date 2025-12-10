@@ -48,24 +48,36 @@ jobs:
           coder-template-name: "cat-readme-task"
           coder-task-name-prefix: "readme-gen"
           coder-task-prompt: |
-            Generate a concise, impactful GitHub profile README for DevelopmentCats/DevelopmentCats.
+            Generate an impressive GitHub profile README for DevelopmentCats/DevelopmentCats.
             
             Process:
             1. cd ~/projects/DevelopmentCats
-            2. Run: python3 scripts/generate_readme.py (fetches data → data/github_stats.json)
-            3. Read data/github_stats.json for stats
-            4. Read scripts/ai_guidelines.md for guidance
-            5. Create a README.md that is:
-               ✅ CONCISE - GitHub already shows bio, followers, repo count, etc.
-               ✅ FOCUSED - Highlight Coder Registry work (unique!)
-               ✅ VISUAL - Badges for tech stack (use constants.py helpers)
-               ✅ RELEVANT - Only show what's interesting/impressive
-               ✅ SCANNABLE - Easy to digest in 10 seconds
-               ❌ NOT verbose or listing basic profile info
-               ❌ NOT showing what GitHub already displays
+            2. Run: python3 scripts/generate_readme.py (fetches GitHub data → data/github_stats.json)
+            3. Read data/github_stats.json - it has:
+               - languages.all_detected: ALL languages I use (show them all!)
+               - languages.top_8: Most frequently used
+               - coder_stats: Coder Registry contributions
+               - recent_activity: Recent work
+            4. Read scripts/ai_guidelines.md for styling rules
+            5. Create README.md following these rules:
+               
+               STYLING (follow these):
+               ✅ Center headers and main content with HTML
+               ✅ Use proper alignment for badges and stats
+               ✅ Professional spacing and visual hierarchy
+               ✅ Clean, modern design
+               
+               CONTENT (your creative choice):
+               ✅ Show ALL languages from data (languages.all_detected)
+               ✅ Highlight Coder Registry work prominently
+               ✅ Include GitHub stats visualizations
+               ✅ Choose which sections to include
+               ✅ Decide on layout and grouping
+               ❌ Don't repeat bio/followers (GitHub shows that)
+               
             6. Commit: git add README.md data/ && git commit -m "🤖 Auto-update README" && git push
             
-            Keep it punchy and impressive - less is more!
+            Make it impressive - show all skills while keeping it clean!
           github-user-id: ${{ steps.get-user-id.outputs.github_user_id }}
           github-token: ${{ github.token }}
           # Use run number to create unique task names (readme-gen-123, readme-gen-124, etc.)

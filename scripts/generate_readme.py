@@ -132,20 +132,48 @@ def get_coder_registry_stats(repos: List[Dict], events: List[Dict]) -> Dict[str,
 
 
 def get_language_stats(repos: List[Dict]) -> Dict[str, int]:
-    """Calculate language usage across repositories."""
+    """Calculate comprehensive language usage across all repositories."""
     print("Calculating language statistics...")
     
     languages = {}
+    
+    # Get languages from each repo
     for repo in repos:
         if repo.get("fork", False):
             continue  # Skip forked repos
         
+        # Primary language
+        primary_lang = repo.get("language")
+        if primary_lang:
+            languages[primary_lang] = languages.get(primary_lang, 0) + 1
+        
+        # Try to get detailed language breakdown if available
+        # Note: This would require additional API calls per repo
+        # For now, we count primary languages which is what GitHub shows
+    
+    # Sort by usage (most used first)
+    return dict(sorted(languages.items(), key=lambda x: x[1], reverse=True))
+
+
+def get_all_languages_comprehensive(repos: List[Dict]) -> List[str]:
+    """
+    Get ALL languages detected across repos, even if used rarely.
+    This gives Claude the full picture of what you know.
+    """
+    print("Collecting all languages (comprehensive)...")
+    
+    all_languages = set()
+    
+    for repo in repos:
+        if repo.get("fork", False):
+            continue
+        
         lang = repo.get("language")
         if lang:
-            languages[lang] = languages.get(lang, 0) + 1
+            all_languages.add(lang)
     
-    # Sort by usage
-    return dict(sorted(languages.items(), key=lambda x: x[1], reverse=True))
+    # Return sorted list (alphabetically for consistency)
+    return sorted(list(all_languages))
 
 
 def get_recent_activity(events: List[Dict]) -> List[Dict[str, str]]:
@@ -314,6 +342,7 @@ def generate_readme(github_data: Dict[str, Any]) -> str:
     # Extract statistics
     coder_stats = get_coder_registry_stats(repos, events)
     language_stats = get_language_stats(repos)
+    all_languages = get_all_languages_comprehensive(repos)
     recent_activity = get_recent_activity(events)
     
     # Save comprehensive data for AI to use
@@ -327,15 +356,20 @@ def generate_readme(github_data: Dict[str, Any]) -> str:
             "following": user.get("following"),
         },
         "coder_stats": coder_stats,
-        "language_stats": language_stats,
+        "languages": {
+            "by_repo_count": language_stats,  # Languages sorted by how many repos use them
+            "all_detected": all_languages,     # ALL languages found (comprehensive list)
+            "top_8": list(language_stats.keys())[:8],  # Top 8 most used
+            "total_count": len(all_languages)
+        },
         "recent_activity": recent_activity,
-        "top_languages": list(language_stats.keys())[:8],
         "updated_at": datetime.utcnow().isoformat(),
         "instructions": {
             "note": "Use constants.py helpers for all badges - they guarantee working URLs",
-            "guidelines": "Read scripts/ai_guidelines.md for creative patterns",
+            "guidelines": "Read scripts/ai_guidelines.md for styling and creative patterns",
             "social_links": "Defined in constants.USER_SOCIAL_LINKS",
-            "tech_reference": "Use constants.COMMON_TECH as inspiration"
+            "tech_reference": "Use constants.COMMON_TECH for icon slugs and colors",
+            "all_languages_available": "languages.all_detected has EVERY language detected"
         }
     }
     
@@ -345,7 +379,8 @@ def generate_readme(github_data: Dict[str, Any]) -> str:
     print(f"✅ Data saved to {DATA_DIR / 'github_stats.json'}")
     print(f"   - {coder_stats['total_prs']} Coder Registry PRs")
     print(f"   - {len(recent_activity)} recent activities")
-    print(f"   - {len(language_stats)} languages detected")
+    print(f"   - {len(all_languages)} total languages detected")
+    print(f"   - Top languages: {', '.join(list(language_stats.keys())[:5])}")
     print("\n🎨 AI can now generate README with this data!")
     
     # Return a simple confirmation instead of a full README

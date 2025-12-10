@@ -1,15 +1,18 @@
 # AI Guidelines for README Generation
 
 This document guides AI (like Claude) when generating or modifying the README.
+Based on GitHub README best practices from 2024-2025.
 
-## 🎯 Core Principles
+## 🎯 Core Principles (Industry Best Practices)
 
-1. **Be Concise**: GitHub already shows bio, followers, repo count - don't repeat it
-2. **Be Intelligent, Not Rigid**: Choose what to display based on actual data
-3. **Stay Safe**: Only use helpers from `constants.py` for images/badges
-4. **Be Relevant**: Show what matters, hide what doesn't
-5. **Stay Fresh**: Emphasize recent, active contributions
-6. **Less is More**: Keep it scannable - people won't read walls of text
+1. **Scannable in 10 Seconds**: Visitors decide quickly if they're interested
+2. **Visual Over Text**: Badges, stats, and images > paragraphs
+3. **No Redundancy**: GitHub already shows bio, followers, repo count
+4. **Stay Safe**: Only use helpers from `constants.py` for images/badges
+5. **Professional but Personal**: Show personality without being unprofessional
+6. **Mobile-Friendly**: Works on all screen sizes
+7. **Accessible**: Proper alt text, good contrast, clear structure
+8. **Updated**: Show recent activity and current work
 
 ## 🛠️ Available Tools
 
@@ -184,28 +187,35 @@ readme += "Python, JavaScript, Go"  # Static list
 
 ## 💡 Creative Freedom
 
-### DO Feel Free To:
+### ✅ Best Practices (Do These):
 
-1. **Reorganize sections** based on what's most interesting
-2. **Add emojis** strategically (1-2 per section, not everywhere)
-3. **Choose colors** that match the brand/technology
-4. **Highlight Coder work** prominently (this is unique!)
-5. **Skip empty sections** (don't show "Recent Activity: None")
-6. **Group related items** intelligently
-7. **Make it personal** to the user's actual work
-8. **Keep it SHORT** - 3-4 sections max
-9. **Use badges over text** - visual > verbose
-10. **Let stats speak** - graphs instead of paragraphs
+1. **Start Strong**: Eye-catching header with role/focus
+2. **Lead with Unique**: Coder Registry work at the top (not common!)
+3. **Be Visual**: More badges and images, less text
+4. **Group Logically**: Languages together, tools together, etc.
+5. **Add Alt Text**: Every image needs descriptive alt text (accessibility!)
+6. **Use Emojis Wisely**: 1 per section header for quick scanning
+7. **Keep Sections Short**: 3-5 lines of content per section
+8. **Center Key Elements**: Headers, intro badges, stats
+9. **Add Separators**: Use `---` between major sections
+10. **Show Personality**: Brief, authentic, not corporate-speak
+11. **Make it Scannable**: Someone should "get" you in 10 seconds
+12. **Test Both Themes**: Works in light and dark mode
 
-### DON'T:
+### ❌ Common Mistakes (Avoid These):
 
-1. **Invent fake data** (no made-up stats)
-2. **Use unverified image URLs** (only constants.py helpers!)
-3. **Repeat profile info** (no name, bio, followers - already visible)
-4. **Write paragraphs** (use bullets, badges, visuals)
-5. **List everything** (be selective - what's impressive?)
-6. **Make it long** (keep under 100 lines total)
-7. **Be generic** (focus on Coder/unique work)
+1. **Walls of Text**: No one reads paragraphs on GitHub profiles
+2. **Redundancy**: Repeating what's already visible (bio, followers, etc.)
+3. **Too Many Stats**: 3-4 stat images max, more is overwhelming
+4. **Poor Contrast**: Light gray text on white background
+5. **Missing Alt Text**: Accessibility fail
+6. **Outdated Content**: "Currently learning React" from 2020
+7. **Generic Statements**: "Passionate developer" means nothing
+8. **No Visual Hierarchy**: Everything same size/importance
+9. **Broken Images**: Always use trusted sources (constants.py!)
+10. **Too Long**: Over 150 lines is excessive
+11. **Left-Aligned Everything**: Looks unpolished
+12. **Random Order**: Put impressive stuff first!
 
 ## 🎨 Style Guidelines
 
@@ -214,56 +224,202 @@ readme += "Python, JavaScript, Go"  # Static list
 - Enthusiastic about Coder ecosystem
 - Direct and to the point
 
-### Structure
-- **Minimal text** - mostly visual (badges, stats)
-- Clear hierarchy but not too many levels
-- Visual elements > paragraphs
-- White space is good
+### Structure & Alignment (GitHub Best Practices)
 
-### Content
-- Lead with most impressive work (Coder Registry!)
-- Show, don't tell (badges > descriptions)
-- Skip what GitHub already shows:
-  - ❌ Name/username (already at top of profile)
-  - ❌ Bio (already shown)
-  - ❌ Follower/following counts (already visible)
-  - ❌ Total repo count (already shown)
-  - ❌ Location, company, etc. (in sidebar)
-- Include what's unique:
-  - ✅ Coder Registry contributions (specific!)
-  - ✅ Tech stack badges
-  - ✅ GitHub stats visualizations
-  - ✅ Notable recent activity
-  - ✅ Social links
+**✅ DO:**
+- Center headers, intro badges, and stats for professional look
+- Use HTML `align="center"` for centering (markdown doesn't support it well)
+- Add horizontal rules `---` to separate sections
+- Use emojis in section headers for quick visual scanning
+- Keep sections short (3-5 lines of actual content)
+- Use white space generously
+- Make it work on light AND dark themes
+
+**❌ DON'T:**
+- Left-align everything (looks amateur)
+- Cram badges together without spacing
+- Use walls of text
+- Skip alt text on images
+- Use colors that only work in one theme
+
+### Formatting Rules (Follow These Exactly)
+
+**Centered Header (recommended):**
+```markdown
+<h1 align="center">Hi 👋, I'm [Name]</h1>
+<h3 align="center">Role | Specialization</h3>
+```
+
+**Centered Badge Group:**
+```markdown
+<p align="center">
+  <img src="badge-url" alt="description" />
+  <img src="badge-url" alt="description" />
+</p>
+```
+
+**Or for markdown badges:**
+```markdown
+<p align="center">
+  
+![Badge1](url) ![Badge2](url) ![Badge3](url)
+  
+</p>
+```
+
+**Section Headers (use emojis for scanning):**
+```markdown
+## 🚀 What I'm Working On
+## 🛠️ Tech Stack
+## 📊 GitHub Stats
+## 🤝 Connect With Me
+```
+
+**Horizontal Rule Between Sections:**
+```markdown
+---
+```
+
+**Images with Alt Text (accessibility!):**
+```markdown
+<img src="url" alt="GitHub Stats showing 500+ contributions" />
+```
+
+### Content Rules (Best Practices 2024)
+
+**❌ Skip (GitHub Already Shows):**
+- Name/username (at top of profile)
+- Bio (already visible)
+- Follower/following counts (redundant)
+- Total repo count (already displayed)
+- Location, company (in sidebar)
+
+**✅ Include (Makes You Stand Out):**
+
+1. **Brief Tagline** (1 line max)
+   - What you do or focus on
+   - Example: "Building cloud dev tools | Coder Registry Contributor"
+
+2. **Current Work** (2-3 lines)
+   - What you're actively working on NOW
+   - Coder Registry contributions (unique!)
+   - Link to specific project/organization
+
+3. **Tech Stack** (show everything!)
+   - ALL languages from `languages.all_detected`
+   - Group logically: Languages, Frameworks, Cloud, Tools
+   - Use badges for visual impact
+   - Don't limit to 8 - show your full skillset!
+
+4. **GitHub Stats** (2-3 visualizations)
+   - Contribution stats
+   - Language breakdown
+   - Streak (optional)
+   - These are dynamic and interesting!
+
+5. **Contact/Social** (badges only)
+   - Twitter, Discord, Email, etc.
+   - Make them clickable badges
+
+**How to Show Languages:**
+- Read `languages.all_detected` from data file
+- Use `constants.COMMON_TECH` to get icon slugs and colors
+- If a language isn't in COMMON_TECH, use lowercase name as slug
+- Group logically: Languages, Frameworks, Tools, Cloud, etc.
+- Show ALL of them, not just top 8!
 
 ## 📊 Example Decision Tree
 
 ```
-README Structure (keep it minimal!):
+RECOMMENDED STRUCTURE (Following GitHub Best Practices):
 
-1. Header (optional - GitHub shows this already)
-   ├─ Skip name/bio (already visible)
-   └─ Maybe: Quick tagline or focus (1 line max)
+╔════════════════════════════════════════════════════════════╗
+║  <h1 align="center">Hi 👋, I'm DevelopmentCats</h1>       ║
+║  <h3 align="center">Full-Stack Developer | Coder          ║
+║                     Registry Contributor</h3>              ║
+║                                                            ║
+║  <p align="center">                                        ║
+║    [Profile views] [Coder badge] [Other badges]           ║
+║  </p>                                                      ║
+╚════════════════════════════════════════════════════════════╝
 
-2. Coder Registry Work (MAIN FOCUS - 2-3 lines)
-   ├─ Prominent badge/link
-   ├─ Quick highlight of contribution (not a list!)
-   └─ Example: "Building Terraform modules for cloud dev environments"
+---
 
-3. Tech Stack (badges only - no text!)
-   ├─ Show top 6-8 technologies
-   ├─ One row of badges
-   └─ Use constants.py helpers
+## 🚀 What I'm Working On
 
-4. GitHub Stats (visual - let images do the talking)
-   ├─ Stats graph
-   ├─ Maybe streak or languages
-   └─ Max 2-3 stat images
+Building Terraform modules for the [Coder Registry](link) that help 
+developers create cloud dev environments.
 
-5. Connect (1 line of social badges)
-   └─ Twitter, Discord, Email badges
+---
 
-Total: ~30-60 lines max, mostly badges/images
+## 🛠️ Tech Stack
+
+### Languages
+
+<p align="center">
+  
+![Python](badge) ![TypeScript](badge) ![JavaScript](badge)
+![Go](badge) ![Bash](badge) ![Java](badge)
+... ALL languages from languages.all_detected ...
+  
+</p>
+
+### Cloud & Infrastructure
+
+<p align="center">
+  
+![Docker](badge) ![Kubernetes](badge) ![Terraform](badge)
+  
+</p>
+
+### Frameworks & Tools
+
+<p align="center">
+  
+![React](badge) ![Node.js](badge) ![Flask](badge)
+  
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="stats-url" alt="GitHub stats showing 500+ contributions" />
+</p>
+
+<p align="center">
+  <img src="streak-url" alt="GitHub streak" />
+</p>
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="url"><img src="twitter-badge" alt="Twitter" /></a>
+  <a href="url"><img src="discord-badge" alt="Discord" /></a>
+  <a href="url"><img src="email-badge" alt="Email" /></a>
+</p>
+
+---
+
+<p align="center">
+  <sub>🤖 Auto-updated twice weekly via Coder Tasks</sub>
+</p>
+
+═══════════════════════════════════════════════════════════
+
+KEY PRINCIPLES:
+✓ Centered headers and key elements
+✓ Visual hierarchy (important stuff stands out)
+✓ Generous white space
+✓ Section breaks with ---
+✓ Emojis for quick section identification
+✓ ALL languages shown (grouped logically)
+✓ Alt text on all images
+✓ ~60-100 lines total
+✓ Scannable in 10 seconds
 ```
 
 ## 🔄 Iteration
