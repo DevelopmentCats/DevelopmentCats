@@ -1,0 +1,83 @@
+name: Update Profile README
+
+on:
+  schedule:
+    # Run twice a week: Monday and Thursday at 2 AM UTC
+    - cron: "0 2 * * 1,4"
+  workflow_dispatch: # Allow manual triggers
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update-readme.yml"
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    
+    steps:
+      - name: Get GitHub User ID
+        id: get-user-id
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: |
+          # Get the user ID for the repository owner
+          USER_ID=$(gh api "users/${REPO_OWNER}" --jq '.id')
+          echo "github_user_id=${USER_ID}" >> "${GITHUB_OUTPUT}"
+          echo "Found GitHub user ID: ${USER_ID} for ${REPO_OWNER}"
+
+      - name: Checkout create-task-action
+        uses: actions/checkout@v4
+        with:
+          repository: coder/create-task-action
+          ref: main
+          path: ./.github/actions/create-task-action
+
+      - name: Create Coder Task to Generate README
+        id: create-task
+        uses: ./.github/actions/create-task-action
+        with:
+          coder-url: ${{ secrets.CODER_URL }}
+          coder-token: ${{ secrets.CODER_SESSION_TOKEN }}
+          coder-organization: "default"
+          coder-template-name: "cat-readme-task"
+          coder-task-name-prefix: "readme-gen"
+          coder-task-prompt: |
+            Update the GitHub profile README for DevelopmentCats/DevelopmentCats.
+            
+            Steps:
+            1. cd ~/projects/DevelopmentCats
+            2. Install dependencies: pip install -r requirements.txt
+            3. Run the generator: python3 scripts/generate_readme.py
+            4. Review the generated README.md file
+            5. Commit and push changes:
+               git add README.md data/
+               git commit -m "🤖 Auto-update README - $(date +'%Y-%m-%d')"
+               git push
+            
+            If any step fails, debug the issue and fix it before continuing.
+          github-user-id: ${{ steps.get-user-id.outputs.github_user_id }}
+          github-token: ${{ github.token }}
+          github-issue-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          comment-on-issue: false
+
+      - name: Output Task Info
+        env:
+          TASK_CREATED: ${{ steps.create-task.outputs.task-created }}
+          TASK_NAME: ${{ steps.create-task.outputs.task-name }}
+          TASK_URL: ${{ steps.create-task.outputs.task-url }}
+        run: |
+          {
+            echo "## Coder Task Created"
+            echo ""
+            echo "**Status:** ${{ steps.create-task.outputs.task-created && 'New task created' || 'Existing task updated' }}"
+            echo "**Task Name:** ${TASK_NAME}"
+            echo "**Task URL:** ${TASK_URL}"
+            echo ""
+            echo "Claude Code is now generating your README! Check the task in your Coder deployment."
+          } >> "${GITHUB_STEP_SUMMARY}"
