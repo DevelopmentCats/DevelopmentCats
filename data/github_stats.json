@@ -48,16 +48,40 @@
     "total_commits": 0,
     "total_issues": 1
   },
-  "language_stats": {
-    "JavaScript": 8,
-    "Python": 6,
-    "Dockerfile": 3,
-    "TypeScript": 2,
-    "Shell": 1,
-    "HTML": 1,
-    "Vue": 1,
-    "HCL": 1,
-    "CSS": 1
+  "languages": {
+    "by_repo_count": {
+      "JavaScript": 8,
+      "Python": 6,
+      "Dockerfile": 3,
+      "TypeScript": 2,
+      "Shell": 1,
+      "HTML": 1,
+      "Vue": 1,
+      "HCL": 1,
+      "CSS": 1
+    },
+    "all_detected": [
+      "CSS",
+      "Dockerfile",
+      "HCL",
+      "HTML",
+      "JavaScript",
+      "Python",
+      "Shell",
+      "TypeScript",
+      "Vue"
+    ],
+    "top_8": [
+      "JavaScript",
+      "Python",
+      "Dockerfile",
+      "TypeScript",
+      "Shell",
+      "HTML",
+      "Vue",
+      "HCL"
+    ],
+    "total_count": 9
   },
   "recent_activity": [
     {
@@ -116,21 +140,12 @@
       "url": "https://github.com/coder/agentapi/issues/155"
     }
   ],
-  "top_languages": [
-    "JavaScript",
-    "Python",
-    "Dockerfile",
-    "TypeScript",
-    "Shell",
-    "HTML",
-    "Vue",
-    "HCL"
-  ],
-  "updated_at": "2025-12-10T20:39:36.017823",
+  "updated_at": "2025-12-10T20:52:54.882861",
   "instructions": {
     "note": "Use constants.py helpers for all badges - they guarantee working URLs",
-    "guidelines": "Read scripts/ai_guidelines.md for creative patterns",
+    "guidelines": "Read scripts/ai_guidelines.md for styling and creative patterns",
     "social_links": "Defined in constants.USER_SOCIAL_LINKS",
-    "tech_reference": "Use constants.COMMON_TECH as inspiration"
+    "tech_reference": "Use constants.COMMON_TECH for icon slugs and colors",
+    "all_languages_available": "languages.all_detected has EVERY language detected"
   }
 }
