@@ -140,7 +140,7 @@
       "url": "https://github.com/coder/agentapi/issues/155"
     }
   ],
-  "updated_at": "2025-12-10T20:52:54.882861",
+  "updated_at": "2025-12-11T02:41:26.935285",
   "instructions": {
     "note": "Use constants.py helpers for all badges - they guarantee working URLs",
     "guidelines": "Read scripts/ai_guidelines.md for styling and creative patterns",

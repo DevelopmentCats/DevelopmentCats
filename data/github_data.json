@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats/releases{/id}",
       "deployments_url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats/deployments",
       "created_at": "2025-05-23T19:28:05Z",
-      "updated_at": "2025-12-10T20:49:32Z",
-      "pushed_at": "2025-12-10T20:49:29Z",
+      "updated_at": "2025-12-10T20:55:10Z",
+      "pushed_at": "2025-12-10T20:55:06Z",
       "git_url": "git://github.com/DevelopmentCats/DevelopmentCats.git",
       "ssh_url": "git@github.com:DevelopmentCats/DevelopmentCats.git",
       "clone_url": "https://github.com/DevelopmentCats/DevelopmentCats.git",
       "svn_url": "https://github.com/DevelopmentCats/DevelopmentCats",
       "homepage": null,
-      "size": 7,
+      "size": 102,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Python",
@@ -211,7 +211,7 @@
       "clone_url": "https://github.com/DevelopmentCats/AppBinHub.git",
       "svn_url": "https://github.com/DevelopmentCats/AppBinHub",
       "homepage": null,
-      "size": 351,
+      "size": 352,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Python",
@@ -6212,6 +6212,695 @@
   ],
   "events": [
     {
+      "id": "5227801886",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "review": {
+          "id": 3564745292,
+          "node_id": "PRR_kwDOGkVX1s7UebJM",
+          "user": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "## \ud83d\udd0d Code Review\n\nThis PR adds a CI workflow to automatically perform code reviews on pull requests using Coder Tasks.\n\n**Found:** 1 minor issue (error handling suggestion)\n\nSee inline comment for details.\n\n---\n*AI review via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
+          "submitted_at": "2025-12-10T22:23:10Z",
+          "state": "commented",
+          "html_url": "https://github.com/coder/coder/pull/21103#pullrequestreview-3564745292",
+          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "_links": {
+            "html": {
+              "href": "https://github.com/coder/coder/pull/21103#pullrequestreview-3564745292"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
+            }
+          },
+          "updated_at": "2025-12-10T22:23:10Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "id": 3072227415,
+          "number": 21103,
+          "head": {
+            "ref": "cat/code-review-task",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:23:12Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "5227801871",
+      "type": "PullRequestReviewCommentEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "action": "created",
+        "comment": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2608421107",
+          "pull_request_review_id": 3564745292,
+          "id": 2608421107,
+          "node_id": "PRRC_kwDOGkVX1s6beVjz",
+          "diff_hunk": "@@ -0,0 +1,438 @@\n+# This workflow performs AI-powered code review on PRs.",
+          "path": ".github/workflows/code-review.yaml",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
+          "original_commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
+          "user": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "**Issue:** Missing error handling flags - script should fail fast on errors for CI reliability.\n\nFor CI workflows, it's recommended to add `set -euo pipefail` at the top of shell scripts to:\n- Exit on any command failure (`-e`)\n- Exit on undefined variable usage (`-u`)\n- Exit on pipeline failures (`-o pipefail`)\n\nThis prevents silent failures where the workflow continues despite errors.\n\n```suggestion\n#!/bin/bash\nset -euo pipefail\n```",
+          "created_at": "2025-12-10T22:23:10Z",
+          "updated_at": "2025-12-10T22:23:10Z",
+          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2608421107",
+          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2608421107"
+            },
+            "html": {
+              "href": "https://github.com/coder/coder/pull/21103#discussion_r2608421107"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
+            }
+          },
+          "reactions": {
+            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2608421107/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "original_position": 1,
+          "position": 1,
+          "subject_type": "line"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "id": 3072227415,
+          "number": 21103,
+          "head": {
+            "ref": "cat/code-review-task",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:23:10Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "6631987265",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "repository_id": 440752086,
+        "push_id": 28925700420,
+        "ref": "refs/heads/cat/code-review-task",
+        "head": "96c66d6d908f9d842e5182684499572bff63e262",
+        "before": "c5fe6c5925c692af570aba34df1bf949dde6e8fe"
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:20:19Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "5227737717",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "action": "labeled",
+        "number": 21103,
+        "pull_request": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "id": 3072227415,
+          "number": 21103,
+          "head": {
+            "ref": "cat/code-review-task",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          }
+        },
+        "label": {
+          "id": 9770974218,
+          "node_id": "LA_kwDOGkVX1s8AAAACRmU8Cg",
+          "url": "https://api.github.com/repos/coder/coder/labels/code-review",
+          "name": "code-review",
+          "color": "F5B018",
+          "default": false,
+          "description": ""
+        },
+        "labels": [
+          {
+            "id": 9709669659,
+            "node_id": "LA_kwDOGkVX1s8AAAACQr3NGw",
+            "url": "https://api.github.com/repos/coder/coder/labels/doc-check",
+            "name": "doc-check",
+            "color": "57d197",
+            "default": false,
+            "description": "Assign this label to PRs to check for any doc changes."
+          },
+          {
+            "id": 9770974218,
+            "node_id": "LA_kwDOGkVX1s8AAAACRmU8Cg",
+            "url": "https://api.github.com/repos/coder/coder/labels/code-review",
+            "name": "code-review",
+            "color": "F5B018",
+            "default": false,
+            "description": ""
+          }
+        ]
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:18:52Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "5227736582",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "action": "unlabeled",
+        "number": 21103,
+        "pull_request": {
+          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
+          "id": 3072227415,
+          "number": 21103,
+          "head": {
+            "ref": "cat/code-review-task",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
+            "repo": {
+              "id": 440752086,
+              "url": "https://api.github.com/repos/coder/coder",
+              "name": "coder"
+            }
+          }
+        },
+        "label": {
+          "id": 9709669659,
+          "node_id": "LA_kwDOGkVX1s8AAAACQr3NGw",
+          "url": "https://api.github.com/repos/coder/coder/labels/doc-check",
+          "name": "doc-check",
+          "color": "57d197",
+          "default": false,
+          "description": "Assign this label to PRs to check for any doc changes."
+        },
+        "labels": [
+          {
+            "id": 9709669659,
+            "node_id": "LA_kwDOGkVX1s8AAAACQr3NGw",
+            "url": "https://api.github.com/repos/coder/coder/labels/doc-check",
+            "name": "doc-check",
+            "color": "57d197",
+            "default": false,
+            "description": "Assign this label to PRs to check for any doc changes."
+          }
+        ]
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:15:54Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "6631905418",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "repository_id": 440752086,
+        "push_id": 28925618637,
+        "ref": "refs/heads/cat/code-review-task",
+        "head": "c5fe6c5925c692af570aba34df1bf949dde6e8fe",
+        "before": "c7c96e9e74cb4f9d5d485f85e615c15f9228db40"
+      },
+      "public": true,
+      "created_at": "2025-12-10T22:15:54Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "5227119437",
+      "type": "IssueCommentEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "action": "created",
+        "issue": {
+          "url": "https://api.github.com/repos/coder/coder/issues/21103",
+          "repository_url": "https://api.github.com/repos/coder/coder",
+          "labels_url": "https://api.github.com/repos/coder/coder/issues/21103/labels{/name}",
+          "comments_url": "https://api.github.com/repos/coder/coder/issues/21103/comments",
+          "events_url": "https://api.github.com/repos/coder/coder/issues/21103/events",
+          "html_url": "https://github.com/coder/coder/pull/21103",
+          "id": 3695620112,
+          "node_id": "PR_kwDOGkVX1s63HnhX",
+          "number": 21103,
+          "title": "feat: add code-review task (initial commit) (testing)",
+          "user": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [
+            {
+              "id": 9709669659,
+              "node_id": "LA_kwDOGkVX1s8AAAACQr3NGw",
+              "url": "https://api.github.com/repos/coder/coder/labels/doc-check",
+              "name": "doc-check",
+              "color": "57d197",
+              "default": false,
+              "description": "Assign this label to PRs to check for any doc changes."
+            },
+            {
+              "id": 9770974218,
+              "node_id": "LA_kwDOGkVX1s8AAAACRmU8Cg",
+              "url": "https://api.github.com/repos/coder/coder/labels/code-review",
+              "name": "code-review",
+              "color": "F5B018",
+              "default": false,
+              "description": ""
+            }
+          ],
+          "state": "open",
+          "locked": false,
+          "assignee": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "assignees": [
+            {
+              "login": "DevelopmentCats",
+              "id": 176868952,
+              "node_id": "U_kgDOCorOWA",
+              "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/DevelopmentCats",
+              "html_url": "https://github.com/DevelopmentCats",
+              "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+              "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+              "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+              "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+              "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+              "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            }
+          ],
+          "milestone": null,
+          "comments": 4,
+          "created_at": "2025-12-04T17:16:46Z",
+          "updated_at": "2025-12-10T22:23:10Z",
+          "closed_at": null,
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/coder/coder/pulls/21103",
+            "html_url": "https://github.com/coder/coder/pull/21103",
+            "diff_url": "https://github.com/coder/coder/pull/21103.diff",
+            "patch_url": "https://github.com/coder/coder/pull/21103.patch",
+            "merged_at": null
+          },
+          "body": "<!--\r\n\r\nIf you have used AI to produce some or all of this PR, please ensure you have read our [AI Contribution guidelines](https://coder.com/docs/about/contributing/AI_CONTRIBUTING) before submitting.\r\n\r\n-->\r\n",
+          "reactions": {
+            "url": "https://api.github.com/repos/coder/coder/issues/21103/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/coder/coder/issues/21103/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null
+        },
+        "comment": {
+          "url": "https://api.github.com/repos/coder/coder/issues/comments/3639075642",
+          "html_url": "https://github.com/coder/coder/pull/21103#issuecomment-3639075642",
+          "issue_url": "https://api.github.com/repos/coder/coder/issues/21103",
+          "id": 3639075642,
+          "node_id": "IC_kwDOGkVX1s7Y5-M6",
+          "user": {
+            "login": "DevelopmentCats",
+            "id": 176868952,
+            "node_id": "U_kgDOCorOWA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DevelopmentCats",
+            "html_url": "https://github.com/DevelopmentCats",
+            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
+            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
+            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
+            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
+            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "created_at": "2025-12-10T21:40:16Z",
+          "updated_at": "2025-12-10T21:40:16Z",
+          "body": "@jdomeracki-coder when you get time to look at this.",
+          "reactions": {
+            "url": "https://api.github.com/repos/coder/coder/issues/comments/3639075642/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "performed_via_github_app": null
+        }
+      },
+      "public": true,
+      "created_at": "2025-12-10T21:40:16Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "6631209708",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "repository_id": 440752086,
+        "push_id": 28924922219,
+        "ref": "refs/heads/cat/code-review-task",
+        "head": "c7c96e9e74cb4f9d5d485f85e615c15f9228db40",
+        "before": "647b6106367705491646be301323fed90ebc1527"
+      },
+      "public": true,
+      "created_at": "2025-12-10T21:40:05Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
+      "id": "6630265809",
+      "type": "PushEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 989271370,
+        "name": "DevelopmentCats/DevelopmentCats",
+        "url": "https://api.github.com/repos/DevelopmentCats/DevelopmentCats"
+      },
+      "payload": {
+        "repository_id": 989271370,
+        "push_id": 28923977559,
+        "ref": "refs/heads/main",
+        "head": "decaf88fb68aa3b05f8a5a5a344e62e8129d9884",
+        "before": "3f945c5d014e33c17fab69773b7c22a0f0fd7cdb"
+      },
+      "public": true,
+      "created_at": "2025-12-10T20:55:07Z"
+    },
+    {
       "id": "6630150398",
       "type": "PushEvent",
       "actor": {
@@ -10867,6 +11556,38 @@
       }
     },
     {
+      "id": "6497612024",
+      "type": "DeleteEvent",
+      "actor": {
+        "id": 176868952,
+        "login": "DevelopmentCats",
+        "display_login": "DevelopmentCats",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DevelopmentCats",
+        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
+      },
+      "repo": {
+        "id": 440752086,
+        "name": "coder/coder",
+        "url": "https://api.github.com/repos/coder/coder"
+      },
+      "payload": {
+        "ref": "cat/antigravity-protocol",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/cat/antigravity-protocol",
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2025-12-05T13:10:00Z",
+      "org": {
+        "id": 95932066,
+        "login": "coder",
+        "gravatar_id": "",
+        "url": "https://api.github.com/orgs/coder",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
+      }
+    },
+    {
       "id": "6497611970",
       "type": "PushEvent",
       "actor": {
@@ -10888,38 +11609,6 @@
         "ref": "refs/heads/main",
         "head": "8e0516a19cfe171e048b37c324966f7db90dc393",
         "before": "770fdb377c78c93c74c2cf7c242e284435a5572c"
-      },
-      "public": true,
-      "created_at": "2025-12-05T13:10:00Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "6497612024",
-      "type": "DeleteEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "ref": "cat/antigravity-protocol",
-        "ref_type": "branch",
-        "full_ref": "refs/heads/cat/antigravity-protocol",
-        "pusher_type": "user"
       },
       "public": true,
       "created_at": "2025-12-05T13:10:00Z",
@@ -11507,7 +12196,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11516,7 +12205,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11561,7 +12250,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11570,7 +12259,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11643,7 +12332,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11652,7 +12341,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11754,7 +12443,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11763,7 +12452,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -11933,9 +12622,9 @@
             }
           ],
           "milestone": null,
-          "comments": 3,
+          "comments": 4,
           "created_at": "2025-12-04T17:16:46Z",
-          "updated_at": "2025-12-10T17:54:26Z",
+          "updated_at": "2025-12-10T22:23:10Z",
           "closed_at": null,
           "type": null,
           "active_lock_reason": null,
@@ -12181,9 +12870,9 @@
             }
           ],
           "milestone": null,
-          "comments": 3,
+          "comments": 4,
           "created_at": "2025-12-04T17:16:46Z",
-          "updated_at": "2025-12-10T17:54:26Z",
+          "updated_at": "2025-12-10T22:23:10Z",
           "closed_at": null,
           "type": null,
           "active_lock_reason": null,
@@ -12337,7 +13026,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12346,7 +13035,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12419,7 +13108,7 @@
           "node_id": "PRRC_kwDOGkVX1s6aY75g",
           "diff_hunk": "@@ -0,0 +1,408 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          set -euo pipefail\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+\n+            # Validate PR URL format\n+            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n+              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}\"\n+              echo \"::error::Expected format: https://github.com/owner/repo/pull/NUMBER\"\n+              exit 1\n+            fi\n+\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |\n+          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n+          echo \"repo=${{ github.event.repository.name }}\" >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Build code review prompt\n+        id: build-prompt\n+        env:\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+          PR_NUMBER: ${{ steps.determine-context.outputs.pr_number }}\n+          REPO_OWNER: ${{ steps.repo-info.outputs.owner }}\n+          REPO_NAME: ${{ steps.repo-info.outputs.repo }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Building code review prompt for PR #${PR_NUMBER}\"\n+\n+          # Build task prompt\n+          TASK_PROMPT=$(cat <<EOF\n+          Perform a thorough code review of PR #${PR_NUMBER} with actionable code suggestions.\n+\n+          PR URL: ${PR_URL}\n+          Repository: ${REPO_OWNER}/${REPO_NAME}\n+\n+          WORKFLOW:\n+            1. Setup GitHub authentication (CRITICAL - DO THIS FIRST!)\n+               export GH_TOKEN=\\$(coder external-auth access-token github)\n+               export GITHUB_TOKEN=\"\\${GH_TOKEN}\"\n+\n+               # Verify authentication works\n+               if ! gh auth status; then\n+                 echo \"ERROR: GitHub authentication failed\"\n+                 echo \"Please ensure GitHub external auth is configured in Coder\"\n+                 exit 1\n+               fi\n+\n+               echo \"\u2705 GitHub authentication successful\"\n+\n+            2. Setup repository (repo is pre-cloned at ~/coder)\n+               cd ~/coder\n+               git fetch origin pull/${PR_NUMBER}/head:pr-${PR_NUMBER}\n+               git checkout pr-${PR_NUMBER}\n+\n+            3. Get PR info\n+               Use GitHub MCP tools to get PR title, body, and full diff\n+               Or use: git diff main...pr-${PR_NUMBER}\n+               Note: GH_TOKEN is now configured for gh CLI\n+\n+            4. Analyze the Changes\n+               - Understand what the PR is trying to accomplish\n+               - Review the code for quality, clarity, and correctness\n+               - Check for potential bugs, edge cases, or security issues\n+               - Verify error handling and logging\n+               - Check for proper testing coverage\n+               - Look for performance issues\n+               - Verify adherence to coding standards and best practices\n+\n+            5. Review Specific Areas\n+               - Code structure and organization\n+               - Naming conventions and readability\n+               - Proper use of types and interfaces\n+               - Error handling patterns\n+               - Test coverage and quality\n+               - Security considerations\n+               - Performance implications\n+               - Database query efficiency (if applicable)\n+               - Proper use of context and cancellation (Go code)\n+               - Authorization checks (dbauthz patterns)\n+\n+            6. Check Against Project Standards\n+               - Review against Uber Go Style Guide (for Go code)\n+               - Check commit message format\n+               - Verify proper comments (explain why, not what)\n+               - Ensure no unnecessary changes to unrelated code\n+               - Check for proper line wrapping (80 chars for comments)\n+               - Ensure style matches existing codebase patterns\n+               - Flag style inconsistencies with Coder conventions\n+\n+            7. Create ONE review with ALL inline comments using GitHub's review API\n+               CRITICAL: Submit everything as a single review, not separate comments\n+\n+            8. Use GitHub's native suggestion format for committable changes\n+\n+          HOW TO POST A REVIEW WITH INLINE COMMENTS (SIMPLIFIED):\n+\n+            IMPORTANT: You have access to gh CLI with GH_TOKEN already configured.\n+\n+            SIMPLE METHOD - Use JSON file:\n+\n+            Step 1: Get the PR commit SHA\n+            COMMIT_SHA=\"\\$(gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER} --jq '.head.sha')\"\n+\n+            Step 2: Create a JSON file with your review\n+            cat > review.json <<'REVIEW_EOF'\n+            {\n+              \"event\": \"COMMENT\",\n+              \"commit_id\": \"PUT_COMMIT_SHA_HERE\",\n+              \"body\": \"## \ud83d\udd0d Code Review\\n\\n[2-3 sentence summary of PR and overall assessment]\\n\\n### \ud83d\udcca Issues Found\\n- **Critical:** X (security, bugs)\\n- **Important:** Y (logic, tests)\\n- **Minor:** Z (style)\\n\\n### \u2705 Highlights\\n[Optional - only if notable patterns or solutions]\\n\\nSee inline comments for details.\\n\\n---\\n*AI review via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\",\n+              \"comments\": [\n+                {\n+                  \"path\": \"coderd/oauth2.go\",\n+                  \"line\": 123,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Error not wrapped with context\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+                },\n+                {\n+                  \"path\": \"coderd/users.go\",\n+                  \"line\": 45,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Variable name not descriptive\\n\\n\\`\\`\\`suggestion\\nvar retryCount int\\n\\`\\`\\`\"\n+                }\n+              ]\n+            }\n+            REVIEW_EOF\n+\n+            Step 3: Replace the commit SHA in the JSON\n+            sed -i \"s/PUT_COMMIT_SHA_HERE/\\${COMMIT_SHA}/\" review.json\n+\n+            Step 4: Submit the review with one simple command\n+            gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER}/reviews \\\\\n+              --method POST \\\\\n+              --input review.json\n+\n+            IMPORTANT NOTES:\n+            - Use JSON for cleaner, easier-to-read review structure\n+            - \"side\" should be \"RIGHT\" for the new/changed code\n+            - \"event\" can be \"COMMENT\", \"APPROVE\", or \"REQUEST_CHANGES\"\n+            - For this task, use \"COMMENT\" (neutral feedback with suggestions)\n+            - Line numbers are integers (no quotes needed in JSON)\n+            - Use \\\\n for newlines in JSON strings\n+\n+          GITHUB SUGGESTION SYNTAX:\n+            GitHub renders \\`\\`\\`suggestion blocks as one-click committable suggestions.\n+            The suggestion replaces the line(s) it comments on.\n+\n+            Example inline comment body:\n+            **Issue:** Error not wrapped with context. Makes debugging harder.\n+\n+            \\`\\`\\`suggestion\n+            if err != nil {\n+                return xerrors.Errorf(\"fetch user data: %w\", err)\n+            }\n+            \\`\\`\\`\n+\n+          WORKFLOW:\n+            1. Read the PR diff and analyze all changes\n+            2. Build a list of ALL issues with their file path, line number, and suggested fix\n+            3. Submit ONE review with ALL inline comments at once\n+            4. Include a summary body in the review\n+\n+          SUMMARY COMMENT FORMAT (Be concise but helpful):\n+          ## \ud83d\udd0d Code Review\n+\n+          [2-3 sentence summary of what the PR does and overall quality]\n+\n+          ### \ud83d\udcca Issues Found\n+          - **Critical:** X (security, bugs, breaking changes)\n+          - **Important:** Y (logic issues, missing tests)\n+          - **Minor:** Z (style, improvements)\n+\n+          ### \u2705 Highlights\n+          [Only mention if truly notable - good patterns, clever solutions, etc. Skip if nothing special.]\n+\n+          See inline comments for specific suggestions.\n+\n+          ---\n+          *AI-generated review via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\n+\n+          RULES FOR SUMMARY:\n+          - Keep total under 20 lines\n+          - Be specific but concise\n+          - Don't repeat inline comment details\n+          - Skip \"Highlights\" section if PR is routine\n+          - Focus on actionable feedback\n+\n+          CRITICAL REQUIREMENTS:\n+            1. Post inline comments on SPECIFIC LINES where issues exist\n+            2. Use \\`\\`\\`suggestion syntax for every code change\n+            3. Each suggestion must be committable with one click\n+            4. Only include the lines that need to change in the suggestion block\n+            5. Make sure suggestion syntax is exactly: \\`\\`\\`suggestion (no language tag)\n+            6. Post summary comment after all inline comments are done\n+\n+          EXAMPLE INLINE COMMENT IN JSON:\n+            {\n+              \"path\": \"coderd/oauth2.go\",\n+              \"line\": 123,\n+              \"side\": \"RIGHT\",\n+              \"body\": \"**Issue:** Error not wrapped with context. Makes debugging harder.\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+            }\n+\n+            PRO TIP: Build the JSON file incrementally as you review:\n+            - Start with empty comments array\n+            - Add each issue as you find it\n+            - Submit once at the end\n+\n+          SUGGESTION BLOCK RULES:\n+            - Use \\`\\`\\`suggestion (not \\`\\`\\`go or any other language)\n+            - Include ONLY the corrected lines\n+            - Preserve exact indentation from the original file\n+            - GitHub will replace the commented line(s) with your suggestion\n+            - For single-line suggestions: comment on that line\n+            - For multi-line suggestions: use start_line and line parameters\n+              Example: -F 'comments[][start_line]=10' -F 'comments[][line]=15'\n+              This comments on lines 10-15 and your suggestion replaces all of them\n+            - Always use side=\"RIGHT\" to comment on the PR changes\n+\n+          BEST PRACTICES:\n+            1. Review the ENTIRE diff before commenting\n+            2. Build the review.json file as you go\n+            3. Be helpful and concise - explain WHY briefly\n+            4. Prioritize: security > bugs > logic > style\n+            5. Style matters - flag inconsistencies with Coder codebase patterns\n+            6. Limit to 15-20 most important issues\n+            7. Summary should be 15-20 lines max\n+            8. Skip \"Highlights\" section if nothing exceptional\n+            9. Don't repeat inline comment details in summary\n+            10. Use \"COMMENT\" event (neutral feedback)\n+            11. Validate JSON before submitting: jq . review.json\n+\n+          COMMON MISTAKES TO AVOID:\n+            - Don't be overly verbose - summary should be 15-20 lines\n+            - Don't write paragraphs explaining obvious issues\n+            - Don't include \"Highlights\" if nothing is exceptional\n+            - Don't use language tags in suggestion blocks (no \\`\\`\\`go)\n+            - Don't forget to get the commit SHA first\n+            - Don't post individual comments - batch in ONE review\n+            - Don't ignore style issues that break Coder conventions\n+            - Don't suggest identical code (verify before/after differ)\n+            - Don't repeat the same issue multiple times\n+\n+          ERROR HANDLING:\n+            Before submitting the review:\n+            1. Validate JSON syntax: jq . review.json\n+            2. Check that GH_TOKEN is set: echo \\$GH_TOKEN\n+            3. Verify commit SHA is valid: echo \\$COMMIT_SHA\n+            4. Test API access: gh api user --jq '.login'\n+\n+            If gh api fails:\n+            1. Check error message for specific issue\n+            2. Verify file paths are relative to repo root (no leading /)\n+            3. Ensure line numbers exist in the PR diff\n+            4. Check that side=\"RIGHT\" for changed code\n+            5. As last resort, post a summary comment explaining the findings\n+\n+          EOF\n+          )\n+\n+          # Output the prompt\n+          {\n+            echo \"task_prompt<<EOFOUTPUT\"\n+            echo \"${TASK_PROMPT}\"\n+            echo \"EOFOUTPUT\"\n+          } >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Checkout create-task-action\n+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0\n+        with:\n+          fetch-depth: 1\n+          path: ./.github/actions/create-task-action\n+          persist-credentials: false\n+          ref: main\n+          repository: coder/create-task-action\n+\n+      - name: Create Coder Task for Code Review\n+        id: create_task\n+        uses: ./.github/actions/create-task-action\n+        with:\n+          coder-url: ${{ secrets.DOC_CHECK_CODER_URL }}\n+          coder-token: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+          coder-organization: \"default\"\n+          coder-template-name: coder\n+          coder-template-preset: ${{ steps.determine-context.outputs.template_preset }}\n+          coder-task-name-prefix: code-review\n+          coder-task-prompt: ${{ steps.build-prompt.outputs.task_prompt }}\n+          github-user-id: ${{ steps.determine-context.outputs.github_user_id }}\n+          github-token: ${{ github.token }}\n+          github-issue-url: ${{ steps.determine-context.outputs.pr_url }}\n+          # The AI will post the review itself, not as a general comment\n+          comment-on-issue: false\n+\n+      - name: Write outputs\n+        env:\n+          TASK_CREATED: ${{ steps.create_task.outputs.task-created }}\n+          TASK_NAME: ${{ steps.create_task.outputs.task-name }}\n+          TASK_URL: ${{ steps.create_task.outputs.task-url }}\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+        run: |",
           "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
           "original_commit_id": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
           "user": {
             "login": "DevelopmentCats",
@@ -12471,7 +13160,7 @@
             "eyes": 0
           },
           "original_position": 397,
-          "position": 414,
+          "position": 427,
           "subject_type": "line"
         },
         "pull_request": {
@@ -12480,7 +13169,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12489,7 +13178,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12533,7 +13222,7 @@
           "node_id": "PRRC_kwDOGkVX1s6aY75Y",
           "diff_hunk": "@@ -0,0 +1,408 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          set -euo pipefail\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+\n+            # Validate PR URL format\n+            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n+              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}\"\n+              echo \"::error::Expected format: https://github.com/owner/repo/pull/NUMBER\"\n+              exit 1\n+            fi\n+\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |\n+          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n+          echo \"repo=${{ github.event.repository.name }}\" >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Build code review prompt\n+        id: build-prompt\n+        env:\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+          PR_NUMBER: ${{ steps.determine-context.outputs.pr_number }}\n+          REPO_OWNER: ${{ steps.repo-info.outputs.owner }}\n+          REPO_NAME: ${{ steps.repo-info.outputs.repo }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Building code review prompt for PR #${PR_NUMBER}\"\n+\n+          # Build task prompt\n+          TASK_PROMPT=$(cat <<EOF\n+          Perform a thorough code review of PR #${PR_NUMBER} with actionable code suggestions.\n+\n+          PR URL: ${PR_URL}\n+          Repository: ${REPO_OWNER}/${REPO_NAME}\n+\n+          WORKFLOW:\n+            1. Setup GitHub authentication (CRITICAL - DO THIS FIRST!)\n+               export GH_TOKEN=\\$(coder external-auth access-token github)\n+               export GITHUB_TOKEN=\"\\${GH_TOKEN}\"\n+\n+               # Verify authentication works\n+               if ! gh auth status; then\n+                 echo \"ERROR: GitHub authentication failed\"\n+                 echo \"Please ensure GitHub external auth is configured in Coder\"\n+                 exit 1\n+               fi\n+\n+               echo \"\u2705 GitHub authentication successful\"\n+\n+            2. Setup repository (repo is pre-cloned at ~/coder)\n+               cd ~/coder\n+               git fetch origin pull/${PR_NUMBER}/head:pr-${PR_NUMBER}\n+               git checkout pr-${PR_NUMBER}\n+\n+            3. Get PR info\n+               Use GitHub MCP tools to get PR title, body, and full diff\n+               Or use: git diff main...pr-${PR_NUMBER}\n+               Note: GH_TOKEN is now configured for gh CLI\n+\n+            4. Analyze the Changes\n+               - Understand what the PR is trying to accomplish\n+               - Review the code for quality, clarity, and correctness\n+               - Check for potential bugs, edge cases, or security issues\n+               - Verify error handling and logging\n+               - Check for proper testing coverage\n+               - Look for performance issues\n+               - Verify adherence to coding standards and best practices\n+\n+            5. Review Specific Areas\n+               - Code structure and organization\n+               - Naming conventions and readability\n+               - Proper use of types and interfaces\n+               - Error handling patterns\n+               - Test coverage and quality\n+               - Security considerations\n+               - Performance implications\n+               - Database query efficiency (if applicable)\n+               - Proper use of context and cancellation (Go code)\n+               - Authorization checks (dbauthz patterns)\n+\n+            6. Check Against Project Standards\n+               - Review against Uber Go Style Guide (for Go code)\n+               - Check commit message format\n+               - Verify proper comments (explain why, not what)\n+               - Ensure no unnecessary changes to unrelated code\n+               - Check for proper line wrapping (80 chars for comments)\n+               - Ensure style matches existing codebase patterns\n+               - Flag style inconsistencies with Coder conventions\n+\n+            7. Create ONE review with ALL inline comments using GitHub's review API\n+               CRITICAL: Submit everything as a single review, not separate comments\n+\n+            8. Use GitHub's native suggestion format for committable changes\n+\n+          HOW TO POST A REVIEW WITH INLINE COMMENTS (SIMPLIFIED):\n+\n+            IMPORTANT: You have access to gh CLI with GH_TOKEN already configured.\n+\n+            SIMPLE METHOD - Use JSON file:\n+\n+            Step 1: Get the PR commit SHA\n+            COMMIT_SHA=\"\\$(gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER} --jq '.head.sha')\"\n+\n+            Step 2: Create a JSON file with your review\n+            cat > review.json <<'REVIEW_EOF'\n+            {\n+              \"event\": \"COMMENT\",\n+              \"commit_id\": \"PUT_COMMIT_SHA_HERE\",\n+              \"body\": \"## \ud83d\udd0d Code Review\\n\\n[2-3 sentence summary of PR and overall assessment]\\n\\n### \ud83d\udcca Issues Found\\n- **Critical:** X (security, bugs)\\n- **Important:** Y (logic, tests)\\n- **Minor:** Z (style)\\n\\n### \u2705 Highlights\\n[Optional - only if notable patterns or solutions]\\n\\nSee inline comments for details.\\n\\n---\\n*AI review via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\",\n+              \"comments\": [\n+                {\n+                  \"path\": \"coderd/oauth2.go\",\n+                  \"line\": 123,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Error not wrapped with context\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+                },\n+                {\n+                  \"path\": \"coderd/users.go\",\n+                  \"line\": 45,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Variable name not descriptive\\n\\n\\`\\`\\`suggestion\\nvar retryCount int\\n\\`\\`\\`\"\n+                }\n+              ]\n+            }\n+            REVIEW_EOF\n+\n+            Step 3: Replace the commit SHA in the JSON\n+            sed -i \"s/PUT_COMMIT_SHA_HERE/\\${COMMIT_SHA}/\" review.json\n+\n+            Step 4: Submit the review with one simple command\n+            gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER}/reviews \\\\\n+              --method POST \\\\\n+              --input review.json\n+\n+            IMPORTANT NOTES:\n+            - Use JSON for cleaner, easier-to-read review structure\n+            - \"side\" should be \"RIGHT\" for the new/changed code\n+            - \"event\" can be \"COMMENT\", \"APPROVE\", or \"REQUEST_CHANGES\"\n+            - For this task, use \"COMMENT\" (neutral feedback with suggestions)\n+            - Line numbers are integers (no quotes needed in JSON)\n+            - Use \\\\n for newlines in JSON strings\n+\n+          GITHUB SUGGESTION SYNTAX:\n+            GitHub renders \\`\\`\\`suggestion blocks as one-click committable suggestions.\n+            The suggestion replaces the line(s) it comments on.\n+\n+            Example inline comment body:\n+            **Issue:** Error not wrapped with context. Makes debugging harder.\n+\n+            \\`\\`\\`suggestion\n+            if err != nil {\n+                return xerrors.Errorf(\"fetch user data: %w\", err)\n+            }\n+            \\`\\`\\`\n+\n+          WORKFLOW:\n+            1. Read the PR diff and analyze all changes\n+            2. Build a list of ALL issues with their file path, line number, and suggested fix\n+            3. Submit ONE review with ALL inline comments at once\n+            4. Include a summary body in the review\n+\n+          SUMMARY COMMENT FORMAT (Be concise but helpful):\n+          ## \ud83d\udd0d Code Review\n+\n+          [2-3 sentence summary of what the PR does and overall quality]\n+\n+          ### \ud83d\udcca Issues Found\n+          - **Critical:** X (security, bugs, breaking changes)\n+          - **Important:** Y (logic issues, missing tests)\n+          - **Minor:** Z (style, improvements)\n+\n+          ### \u2705 Highlights\n+          [Only mention if truly notable - good patterns, clever solutions, etc. Skip if nothing special.]\n+\n+          See inline comments for specific suggestions.\n+\n+          ---\n+          *AI-generated review via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\n+\n+          RULES FOR SUMMARY:\n+          - Keep total under 20 lines\n+          - Be specific but concise\n+          - Don't repeat inline comment details\n+          - Skip \"Highlights\" section if PR is routine\n+          - Focus on actionable feedback\n+\n+          CRITICAL REQUIREMENTS:\n+            1. Post inline comments on SPECIFIC LINES where issues exist\n+            2. Use \\`\\`\\`suggestion syntax for every code change\n+            3. Each suggestion must be committable with one click\n+            4. Only include the lines that need to change in the suggestion block\n+            5. Make sure suggestion syntax is exactly: \\`\\`\\`suggestion (no language tag)\n+            6. Post summary comment after all inline comments are done\n+\n+          EXAMPLE INLINE COMMENT IN JSON:\n+            {\n+              \"path\": \"coderd/oauth2.go\",\n+              \"line\": 123,\n+              \"side\": \"RIGHT\",\n+              \"body\": \"**Issue:** Error not wrapped with context. Makes debugging harder.\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+            }\n+\n+            PRO TIP: Build the JSON file incrementally as you review:\n+            - Start with empty comments array\n+            - Add each issue as you find it\n+            - Submit once at the end\n+\n+          SUGGESTION BLOCK RULES:\n+            - Use \\`\\`\\`suggestion (not \\`\\`\\`go or any other language)\n+            - Include ONLY the corrected lines\n+            - Preserve exact indentation from the original file\n+            - GitHub will replace the commented line(s) with your suggestion\n+            - For single-line suggestions: comment on that line\n+            - For multi-line suggestions: use start_line and line parameters\n+              Example: -F 'comments[][start_line]=10' -F 'comments[][line]=15'\n+              This comments on lines 10-15 and your suggestion replaces all of them\n+            - Always use side=\"RIGHT\" to comment on the PR changes\n+\n+          BEST PRACTICES:\n+            1. Review the ENTIRE diff before commenting\n+            2. Build the review.json file as you go\n+            3. Be helpful and concise - explain WHY briefly\n+            4. Prioritize: security > bugs > logic > style\n+            5. Style matters - flag inconsistencies with Coder codebase patterns\n+            6. Limit to 15-20 most important issues\n+            7. Summary should be 15-20 lines max\n+            8. Skip \"Highlights\" section if nothing exceptional\n+            9. Don't repeat inline comment details in summary\n+            10. Use \"COMMENT\" event (neutral feedback)\n+            11. Validate JSON before submitting: jq . review.json\n+\n+          COMMON MISTAKES TO AVOID:\n+            - Don't be overly verbose - summary should be 15-20 lines\n+            - Don't write paragraphs explaining obvious issues\n+            - Don't include \"Highlights\" if nothing is exceptional\n+            - Don't use language tags in suggestion blocks (no \\`\\`\\`go)\n+            - Don't forget to get the commit SHA first\n+            - Don't post individual comments - batch in ONE review\n+            - Don't ignore style issues that break Coder conventions\n+            - Don't suggest identical code (verify before/after differ)\n+            - Don't repeat the same issue multiple times\n+\n+          ERROR HANDLING:\n+            Before submitting the review:\n+            1. Validate JSON syntax: jq . review.json\n+            2. Check that GH_TOKEN is set: echo \\$GH_TOKEN\n+            3. Verify commit SHA is valid: echo \\$COMMIT_SHA\n+            4. Test API access: gh api user --jq '.login'\n+\n+            If gh api fails:\n+            1. Check error message for specific issue\n+            2. Verify file paths are relative to repo root (no leading /)\n+            3. Ensure line numbers exist in the PR diff\n+            4. Check that side=\"RIGHT\" for changed code\n+            5. As last resort, post a summary comment explaining the findings\n+\n+          EOF\n+          )\n+\n+          # Output the prompt\n+          {\n+            echo \"task_prompt<<EOFOUTPUT\"\n+            echo \"${TASK_PROMPT}\"\n+            echo \"EOFOUTPUT\"\n+          } >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Checkout create-task-action\n+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0\n+        with:\n+          fetch-depth: 1\n+          path: ./.github/actions/create-task-action\n+          persist-credentials: false\n+          ref: main",
           "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
           "original_commit_id": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
           "user": {
             "login": "DevelopmentCats",
@@ -12585,7 +13274,7 @@
             "eyes": 0
           },
           "original_position": 371,
-          "position": 388,
+          "position": 401,
           "subject_type": "line"
         },
         "pull_request": {
@@ -12594,7 +13283,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12603,7 +13292,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12647,7 +13336,7 @@
           "node_id": "PRRC_kwDOGkVX1s6aY75R",
           "diff_hunk": "@@ -0,0 +1,408 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          set -euo pipefail\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+\n+            # Validate PR URL format\n+            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n+              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}\"\n+              echo \"::error::Expected format: https://github.com/owner/repo/pull/NUMBER\"\n+              exit 1\n+            fi\n+\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |",
           "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
           "original_commit_id": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
           "user": {
             "login": "DevelopmentCats",
@@ -12708,7 +13397,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12717,7 +13406,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12761,7 +13450,7 @@
           "node_id": "PRRC_kwDOGkVX1s6aY75K",
           "diff_hunk": "@@ -0,0 +1,408 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          set -euo pipefail\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+\n+            # Validate PR URL format\n+            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n+              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}\"\n+              echo \"::error::Expected format: https://github.com/owner/repo/pull/NUMBER\"\n+              exit 1\n+            fi\n+\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"",
           "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
           "original_commit_id": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
           "user": {
             "login": "DevelopmentCats",
@@ -12822,7 +13511,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12831,7 +13520,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12875,7 +13564,7 @@
           "node_id": "PRRC_kwDOGkVX1s6aY75A",
           "diff_hunk": "@@ -0,0 +1,408 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          set -euo pipefail\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+\n+            # Validate PR URL format\n+            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n+              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}\"\n+              echo \"::error::Expected format: https://github.com/owner/repo/pull/NUMBER\"\n+              exit 1\n+            fi\n+\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"",
           "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
+          "commit_id": "96c66d6d908f9d842e5182684499572bff63e262",
           "original_commit_id": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
           "user": {
             "login": "DevelopmentCats",
@@ -12936,7 +13625,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -12945,7 +13634,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13027,7 +13716,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13036,7 +13725,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13081,7 +13770,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13090,7 +13779,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13154,7 +13843,7 @@
           "number": 21103,
           "head": {
             "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
+            "sha": "96c66d6d908f9d842e5182684499572bff63e262",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13163,7 +13852,7 @@
           },
           "base": {
             "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
+            "sha": "8ed1c1d3720b40a5dcc41c8a17debf93b36d3537",
             "repo": {
               "id": 440752086,
               "url": "https://api.github.com/repos/coder/coder",
@@ -13183,930 +13872,7 @@
         "url": "https://api.github.com/orgs/coder",
         "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
       }
-    },
-    {
-      "id": "5102439896",
-      "type": "PullRequestReviewEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "review": {
-          "id": 3541527967,
-          "node_id": "PRR_kwDOGkVX1s7TF22f",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "## \ud83d\udd0d AI Code Review Summary\n\nI've reviewed this GitHub Actions workflow for AI-powered code reviews. Overall, this is a **well-structured implementation** with excellent documentation and clear intent. The workflow logic is sound and the prompt engineering is comprehensive.\n\n### Summary\nThis PR adds a new GitHub Actions workflow that triggers AI-powered code reviews via Coder Tasks. The workflow can be triggered by adding a \"code-review\" label to a PR or via manual dispatch. It builds a comprehensive prompt for the AI agent and creates a Coder task to perform the review.\n\n### \u2705 Strengths\n- **Excellent inline documentation** explaining the workflow's purpose, triggers, and requirements\n- **Good conditional logic** handling both pull_request and workflow_dispatch events\n- **Proper permission scoping** with minimal required permissions (contents: read, pull-requests: write, actions: write)\n- **Comprehensive prompt engineering** with detailed instructions for the AI agent including examples\n- **Well-organized step structure** with clear naming and logical flow\n- **Good separation of concerns** between steps (determine context, build prompt, create task)\n\n### \ud83d\udcca Review Stats\n- High priority issues: 4 (error handling, security)\n- Medium priority issues: 3 (shell scripting best practices)\n- Low priority suggestions: 2 (reproducibility, clarity)\n\n### \ud83d\udd12 Security & Error Handling\nThe main improvements needed:\n1. **Add `set -euo pipefail`** to all shell script blocks for proper error handling\n2. **Validate user input** (PR URLs) before processing to prevent injection\n3. **Quote variables** properly to handle special characters safely\n4. **Improve error messages** with more actionable context\n\n### \ud83e\uddea Testing Notes\n- The workflow structure is sound and should work as designed\n- Consider testing with edge cases: malformed URLs, special characters, draft PRs\n- The 30-minute timeout is reasonable for code review tasks\n- Good use of `comment-on-issue: false` since AI posts review directly\n\n### \ud83d\udcdd Additional Recommendations\n- **Pin action versions** to commit SHAs for reproducibility (line 352)\n- Consider adding retry logic for transient API failures\n- Document what happens when `template_preset` is empty\n\n---\n*This review was generated by an AI Agent through [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*",
-          "commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "submitted_at": "2025-12-04T18:38:23Z",
-          "state": "commented",
-          "html_url": "https://github.com/coder/coder/pull/21103#pullrequestreview-3541527967",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#pullrequestreview-3541527967"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "updated_at": "2025-12-04T18:58:04Z"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        },
-        "action": "updated"
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:58:06Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "6477229076",
-      "type": "PushEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "repository_id": 440752086,
-        "push_id": 28770939550,
-        "ref": "refs/heads/cat/code-review-task",
-        "head": "84ccad8a383298b298d7e2f1ce965e89d7cb42f4",
-        "before": "2fea873139fec8df57b5bcbf0ff2737611683b06"
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:57:51Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996704",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165409",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165409,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmh",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |\n+          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n+          echo \"repo=${{ github.event.repository.name }}\" >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Build code review prompt\n+        id: build-prompt\n+        env:\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+          PR_NUMBER: ${{ steps.determine-context.outputs.pr_number }}\n+          REPO_OWNER: ${{ steps.repo-info.outputs.owner }}\n+          REPO_NAME: ${{ steps.repo-info.outputs.repo }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Building code review prompt for PR #${PR_NUMBER}\"\n+\n+          # Build task prompt\n+          TASK_PROMPT=$(cat <<EOF\n+          Perform a thorough code review of PR #${PR_NUMBER} with actionable code suggestions.\n+\n+          PR URL: ${PR_URL}\n+          Repository: ${REPO_OWNER}/${REPO_NAME}\n+\n+          WORKFLOW:\n+            1. Setup GitHub authentication (CRITICAL - DO THIS FIRST!)\n+               export GH_TOKEN=\\$(coder external-auth access-token github)\n+               export GITHUB_TOKEN=\"\\${GH_TOKEN}\"\n+\n+               # Verify authentication works\n+               if ! gh auth status; then\n+                 echo \"ERROR: GitHub authentication failed\"\n+                 echo \"Please ensure GitHub external auth is configured in Coder\"\n+                 exit 1\n+               fi\n+\n+               echo \"\u2705 GitHub authentication successful\"\n+\n+            2. Setup repository (repo is pre-cloned at ~/coder)\n+               cd ~/coder\n+               git fetch origin pull/${PR_NUMBER}/head:pr-${PR_NUMBER}\n+               git checkout pr-${PR_NUMBER}\n+\n+            3. Get PR info\n+               Use GitHub MCP tools to get PR title, body, and full diff\n+               Or use: git diff main...pr-${PR_NUMBER}\n+               Note: GH_TOKEN is now configured for gh CLI\n+\n+            4. Analyze the Changes\n+               - Understand what the PR is trying to accomplish\n+               - Review the code for quality, clarity, and correctness\n+               - Check for potential bugs, edge cases, or security issues\n+               - Verify error handling and logging\n+               - Check for proper testing coverage\n+               - Look for performance issues\n+               - Verify adherence to coding standards and best practices\n+\n+            5. Review Specific Areas\n+               - Code structure and organization\n+               - Naming conventions and readability\n+               - Proper use of types and interfaces\n+               - Error handling patterns\n+               - Test coverage and quality\n+               - Security considerations\n+               - Performance implications\n+               - Database query efficiency (if applicable)\n+               - Proper use of context and cancellation (Go code)\n+               - Authorization checks (dbauthz patterns)\n+\n+            6. Check Against Project Standards\n+               - Review against Uber Go Style Guide (for Go code)\n+               - Check commit message format\n+               - Verify proper comments (explain why, not what)\n+               - Ensure no unnecessary changes to unrelated code\n+               - Check for proper line wrapping (80 chars for comments)\n+\n+            7. Create ONE review with ALL inline comments using GitHub's review API\n+               CRITICAL: Submit everything as a single review, not separate comments\n+\n+            8. Use GitHub's native suggestion format for committable changes\n+\n+          HOW TO POST A REVIEW WITH INLINE COMMENTS (SIMPLIFIED):\n+\n+            IMPORTANT: You have access to gh CLI with GH_TOKEN already configured.\n+\n+            SIMPLE METHOD - Use JSON file:\n+\n+            Step 1: Get the PR commit SHA\n+            COMMIT_SHA=\"\\$(gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER} --jq '.head.sha')\"\n+\n+            Step 2: Create a JSON file with your review\n+            cat > review.json <<'REVIEW_EOF'\n+            {\n+              \"event\": \"COMMENT\",\n+              \"commit_id\": \"PUT_COMMIT_SHA_HERE\",\n+              \"body\": \"## \ud83d\udd0d AI Code Review Summary\\n\\nI've reviewed the changes and posted inline suggestions below.\\nClick 'Commit suggestion' on any suggestion to apply it directly.\\n\\n### Summary\\n[Brief overview]\\n\\n### \u2705 Strengths\\n- [Positive aspects]\\n\\n### \ud83d\udcca Review Stats\\n- High priority: X\\n- Medium priority: Y\\n- Low priority: Z\\n\\n---\\n*Generated by AI Agent via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\",\n+              \"comments\": [\n+                {\n+                  \"path\": \"coderd/oauth2.go\",\n+                  \"line\": 123,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Error not wrapped with context\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+                },\n+                {\n+                  \"path\": \"coderd/users.go\",\n+                  \"line\": 45,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Variable name not descriptive\\n\\n\\`\\`\\`suggestion\\nvar retryCount int\\n\\`\\`\\`\"\n+                }\n+              ]\n+            }\n+            REVIEW_EOF\n+\n+            Step 3: Replace the commit SHA in the JSON\n+            sed -i \"s/PUT_COMMIT_SHA_HERE/\\${COMMIT_SHA}/\" review.json\n+\n+            Step 4: Submit the review with one simple command\n+            gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER}/reviews \\\\\n+              --method POST \\\\\n+              --input review.json\n+\n+            IMPORTANT NOTES:\n+            - Use JSON for cleaner, easier-to-read review structure\n+            - \"side\" should be \"RIGHT\" for the new/changed code\n+            - \"event\" can be \"COMMENT\", \"APPROVE\", or \"REQUEST_CHANGES\"\n+            - For this task, use \"COMMENT\" (neutral feedback with suggestions)\n+            - Line numbers are integers (no quotes needed in JSON)\n+            - Use \\\\n for newlines in JSON strings\n+\n+          GITHUB SUGGESTION SYNTAX:\n+            GitHub renders \\`\\`\\`suggestion blocks as one-click committable suggestions.\n+            The suggestion replaces the line(s) it comments on.\n+\n+            Example inline comment body:\n+            **Issue:** Error not wrapped with context. Makes debugging harder.\n+\n+            \\`\\`\\`suggestion\n+            if err != nil {\n+                return xerrors.Errorf(\"fetch user data: %w\", err)\n+            }\n+            \\`\\`\\`\n+\n+          WORKFLOW:\n+            1. Read the PR diff and analyze all changes\n+            2. Build a list of ALL issues with their file path, line number, and suggested fix\n+            3. Submit ONE review with ALL inline comments at once\n+            4. Include a summary body in the review\n+\n+          COMMENT FORMAT FOR SUMMARY:\n+          ## \ud83d\udd0d AI Code Review Summary\n+\n+          I've posted inline review comments with committable suggestions on specific lines.\n+          Click \"Commit suggestion\" on any suggestion to apply it directly.\n+\n+          ### Summary\n+          [Brief overview of what the PR does and overall assessment]\n+\n+          ### \u2705 Strengths\n+          - Positive aspects of the implementation\n+          - Good patterns or approaches used\n+\n+          ### \ud83d\udcca Review Stats\n+          - High priority issues: X\n+          - Medium priority issues: Y\n+          - Suggestions: Z\n+\n+          ### \ud83e\uddea Testing Notes\n+          [Comments about test coverage and quality]\n+\n+          ---\n+          *This review was generated by an AI Agent through [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\n+\n+          CRITICAL REQUIREMENTS:\n+            1. Post inline comments on SPECIFIC LINES where issues exist\n+            2. Use \\`\\`\\`suggestion syntax for every code change\n+            3. Each suggestion must be committable with one click\n+            4. Only include the lines that need to change in the suggestion block\n+            5. Make sure suggestion syntax is exactly: \\`\\`\\`suggestion (no language tag)\n+            6. Post summary comment after all inline comments are done\n+\n+          EXAMPLE INLINE COMMENT IN JSON:\n+            {\n+              \"path\": \"coderd/oauth2.go\",\n+              \"line\": 123,\n+              \"side\": \"RIGHT\",\n+              \"body\": \"**Issue:** Error not wrapped with context. Makes debugging harder.\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+            }\n+\n+            PRO TIP: Build the JSON file incrementally as you review:\n+            - Start with empty comments array\n+            - Add each issue as you find it\n+            - Submit once at the end\n+\n+          SUGGESTION BLOCK RULES:\n+            - Use \\`\\`\\`suggestion (not \\`\\`\\`go or any other language)\n+            - Include ONLY the corrected lines\n+            - Preserve exact indentation from the original file\n+            - GitHub will replace the commented line(s) with your suggestion\n+            - For single-line suggestions: comment on that line\n+            - For multi-line suggestions: use start_line and line parameters\n+              Example: -F 'comments[][start_line]=10' -F 'comments[][line]=15'\n+              This comments on lines 10-15 and your suggestion replaces all of them\n+            - Always use side=\"RIGHT\" to comment on the PR changes\n+\n+          BEST PRACTICES:\n+            1. Review the ENTIRE diff before starting to comment\n+            2. Build the review.json file as you go through the code\n+            3. Be constructive - explain WHY, not just WHAT\n+            4. Prioritize critical issues (security, bugs) over style\n+            5. Use \"COMMENT\" event for suggestions (not REQUEST_CHANGES)\n+            6. If the review is too large (>20 comments), focus on most important\n+            7. Include positive feedback in strengths section\n+            8. Make suggestions actionable and specific\n+            9. Validate JSON syntax before submitting (use jq . review.json)\n+            10. Test with a small review first if unsure\n+\n+          COMMON MISTAKES TO AVOID:\n+            - Don't use language tags in suggestion blocks (no \\`\\`\\`go)\n+            - Don't forget to get the commit SHA first\n+            - Don't post individual comments - batch them in ONE review\n+            - Don't use -f for line numbers, use -F (uppercase)\n+            - Don't comment on unchanged lines (use side=\"RIGHT\")\n+            - Don't include more context than needed in suggestion blocks\n+            - Don't suggest changes to test files that mock prod behavior\n+            - Don't nitpick formatting if it follows project style\n+\n+          ERROR HANDLING:\n+            Before submitting the review:\n+            1. Validate JSON syntax: jq . review.json\n+            2. Check that GH_TOKEN is set: echo \\$GH_TOKEN\n+            3. Verify commit SHA is valid: echo \\$COMMIT_SHA\n+            4. Test API access: gh api user --jq '.login'\n+\n+            If gh api fails:\n+            1. Check error message for specific issue\n+            2. Verify file paths are relative to repo root (no leading /)\n+            3. Ensure line numbers exist in the PR diff\n+            4. Check that side=\"RIGHT\" for changed code\n+            5. As last resort, post a summary comment explaining the findings\n+\n+          EOF\n+          )\n+\n+          # Output the prompt\n+          {\n+            echo \"task_prompt<<EOFOUTPUT\"\n+            echo \"${TASK_PROMPT}\"\n+            echo \"EOFOUTPUT\"\n+          } >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Checkout create-task-action\n+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0\n+        with:\n+          fetch-depth: 1\n+          path: ./.github/actions/create-task-action\n+          persist-credentials: false\n+          ref: main\n+          repository: coder/create-task-action\n+\n+      - name: Create Coder Task for Code Review\n+        id: create_task\n+        uses: ./.github/actions/create-task-action\n+        with:\n+          coder-url: ${{ secrets.DOC_CHECK_CODER_URL }}\n+          coder-token: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+          coder-organization: \"default\"\n+          coder-template-name: coder\n+          coder-template-preset: ${{ steps.determine-context.outputs.template_preset }}\n+          coder-task-name-prefix: code-review\n+          coder-task-prompt: ${{ steps.build-prompt.outputs.task_prompt }}\n+          github-user-id: ${{ steps.determine-context.outputs.github_user_id }}",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Minor:** Missing error handling directives for consistency with other steps.\n\n```suggestion\n        run: |\n          set -euo pipefail\n          {\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165409",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165409"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165409"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165409/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 371,
-          "position": 402,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996552",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165404",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165404,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmc",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |\n+          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n+          echo \"repo=${{ github.event.repository.name }}\" >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Build code review prompt\n+        id: build-prompt\n+        env:\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+          PR_NUMBER: ${{ steps.determine-context.outputs.pr_number }}\n+          REPO_OWNER: ${{ steps.repo-info.outputs.owner }}\n+          REPO_NAME: ${{ steps.repo-info.outputs.repo }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Building code review prompt for PR #${PR_NUMBER}\"\n+\n+          # Build task prompt\n+          TASK_PROMPT=$(cat <<EOF\n+          Perform a thorough code review of PR #${PR_NUMBER} with actionable code suggestions.\n+\n+          PR URL: ${PR_URL}\n+          Repository: ${REPO_OWNER}/${REPO_NAME}\n+\n+          WORKFLOW:\n+            1. Setup GitHub authentication (CRITICAL - DO THIS FIRST!)\n+               export GH_TOKEN=\\$(coder external-auth access-token github)\n+               export GITHUB_TOKEN=\"\\${GH_TOKEN}\"\n+\n+               # Verify authentication works\n+               if ! gh auth status; then\n+                 echo \"ERROR: GitHub authentication failed\"\n+                 echo \"Please ensure GitHub external auth is configured in Coder\"\n+                 exit 1\n+               fi\n+\n+               echo \"\u2705 GitHub authentication successful\"\n+\n+            2. Setup repository (repo is pre-cloned at ~/coder)\n+               cd ~/coder\n+               git fetch origin pull/${PR_NUMBER}/head:pr-${PR_NUMBER}\n+               git checkout pr-${PR_NUMBER}\n+\n+            3. Get PR info\n+               Use GitHub MCP tools to get PR title, body, and full diff\n+               Or use: git diff main...pr-${PR_NUMBER}\n+               Note: GH_TOKEN is now configured for gh CLI\n+\n+            4. Analyze the Changes\n+               - Understand what the PR is trying to accomplish\n+               - Review the code for quality, clarity, and correctness\n+               - Check for potential bugs, edge cases, or security issues\n+               - Verify error handling and logging\n+               - Check for proper testing coverage\n+               - Look for performance issues\n+               - Verify adherence to coding standards and best practices\n+\n+            5. Review Specific Areas\n+               - Code structure and organization\n+               - Naming conventions and readability\n+               - Proper use of types and interfaces\n+               - Error handling patterns\n+               - Test coverage and quality\n+               - Security considerations\n+               - Performance implications\n+               - Database query efficiency (if applicable)\n+               - Proper use of context and cancellation (Go code)\n+               - Authorization checks (dbauthz patterns)\n+\n+            6. Check Against Project Standards\n+               - Review against Uber Go Style Guide (for Go code)\n+               - Check commit message format\n+               - Verify proper comments (explain why, not what)\n+               - Ensure no unnecessary changes to unrelated code\n+               - Check for proper line wrapping (80 chars for comments)\n+\n+            7. Create ONE review with ALL inline comments using GitHub's review API\n+               CRITICAL: Submit everything as a single review, not separate comments\n+\n+            8. Use GitHub's native suggestion format for committable changes\n+\n+          HOW TO POST A REVIEW WITH INLINE COMMENTS (SIMPLIFIED):\n+\n+            IMPORTANT: You have access to gh CLI with GH_TOKEN already configured.\n+\n+            SIMPLE METHOD - Use JSON file:\n+\n+            Step 1: Get the PR commit SHA\n+            COMMIT_SHA=\"\\$(gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER} --jq '.head.sha')\"\n+\n+            Step 2: Create a JSON file with your review\n+            cat > review.json <<'REVIEW_EOF'\n+            {\n+              \"event\": \"COMMENT\",\n+              \"commit_id\": \"PUT_COMMIT_SHA_HERE\",\n+              \"body\": \"## \ud83d\udd0d AI Code Review Summary\\n\\nI've reviewed the changes and posted inline suggestions below.\\nClick 'Commit suggestion' on any suggestion to apply it directly.\\n\\n### Summary\\n[Brief overview]\\n\\n### \u2705 Strengths\\n- [Positive aspects]\\n\\n### \ud83d\udcca Review Stats\\n- High priority: X\\n- Medium priority: Y\\n- Low priority: Z\\n\\n---\\n*Generated by AI Agent via [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\",\n+              \"comments\": [\n+                {\n+                  \"path\": \"coderd/oauth2.go\",\n+                  \"line\": 123,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Error not wrapped with context\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+                },\n+                {\n+                  \"path\": \"coderd/users.go\",\n+                  \"line\": 45,\n+                  \"side\": \"RIGHT\",\n+                  \"body\": \"**Issue:** Variable name not descriptive\\n\\n\\`\\`\\`suggestion\\nvar retryCount int\\n\\`\\`\\`\"\n+                }\n+              ]\n+            }\n+            REVIEW_EOF\n+\n+            Step 3: Replace the commit SHA in the JSON\n+            sed -i \"s/PUT_COMMIT_SHA_HERE/\\${COMMIT_SHA}/\" review.json\n+\n+            Step 4: Submit the review with one simple command\n+            gh api repos/${REPO_OWNER}/${REPO_NAME}/pulls/${PR_NUMBER}/reviews \\\\\n+              --method POST \\\\\n+              --input review.json\n+\n+            IMPORTANT NOTES:\n+            - Use JSON for cleaner, easier-to-read review structure\n+            - \"side\" should be \"RIGHT\" for the new/changed code\n+            - \"event\" can be \"COMMENT\", \"APPROVE\", or \"REQUEST_CHANGES\"\n+            - For this task, use \"COMMENT\" (neutral feedback with suggestions)\n+            - Line numbers are integers (no quotes needed in JSON)\n+            - Use \\\\n for newlines in JSON strings\n+\n+          GITHUB SUGGESTION SYNTAX:\n+            GitHub renders \\`\\`\\`suggestion blocks as one-click committable suggestions.\n+            The suggestion replaces the line(s) it comments on.\n+\n+            Example inline comment body:\n+            **Issue:** Error not wrapped with context. Makes debugging harder.\n+\n+            \\`\\`\\`suggestion\n+            if err != nil {\n+                return xerrors.Errorf(\"fetch user data: %w\", err)\n+            }\n+            \\`\\`\\`\n+\n+          WORKFLOW:\n+            1. Read the PR diff and analyze all changes\n+            2. Build a list of ALL issues with their file path, line number, and suggested fix\n+            3. Submit ONE review with ALL inline comments at once\n+            4. Include a summary body in the review\n+\n+          COMMENT FORMAT FOR SUMMARY:\n+          ## \ud83d\udd0d AI Code Review Summary\n+\n+          I've posted inline review comments with committable suggestions on specific lines.\n+          Click \"Commit suggestion\" on any suggestion to apply it directly.\n+\n+          ### Summary\n+          [Brief overview of what the PR does and overall assessment]\n+\n+          ### \u2705 Strengths\n+          - Positive aspects of the implementation\n+          - Good patterns or approaches used\n+\n+          ### \ud83d\udcca Review Stats\n+          - High priority issues: X\n+          - Medium priority issues: Y\n+          - Suggestions: Z\n+\n+          ### \ud83e\uddea Testing Notes\n+          [Comments about test coverage and quality]\n+\n+          ---\n+          *This review was generated by an AI Agent through [Coder Tasks](https://coder.com/docs/ai-coder/tasks)*\n+\n+          CRITICAL REQUIREMENTS:\n+            1. Post inline comments on SPECIFIC LINES where issues exist\n+            2. Use \\`\\`\\`suggestion syntax for every code change\n+            3. Each suggestion must be committable with one click\n+            4. Only include the lines that need to change in the suggestion block\n+            5. Make sure suggestion syntax is exactly: \\`\\`\\`suggestion (no language tag)\n+            6. Post summary comment after all inline comments are done\n+\n+          EXAMPLE INLINE COMMENT IN JSON:\n+            {\n+              \"path\": \"coderd/oauth2.go\",\n+              \"line\": 123,\n+              \"side\": \"RIGHT\",\n+              \"body\": \"**Issue:** Error not wrapped with context. Makes debugging harder.\\n\\n\\`\\`\\`suggestion\\nif err != nil {\\n    return xerrors.Errorf(\\\"fetch user data: %w\\\", err)\\n}\\n\\`\\`\\`\"\n+            }\n+\n+            PRO TIP: Build the JSON file incrementally as you review:\n+            - Start with empty comments array\n+            - Add each issue as you find it\n+            - Submit once at the end\n+\n+          SUGGESTION BLOCK RULES:\n+            - Use \\`\\`\\`suggestion (not \\`\\`\\`go or any other language)\n+            - Include ONLY the corrected lines\n+            - Preserve exact indentation from the original file\n+            - GitHub will replace the commented line(s) with your suggestion\n+            - For single-line suggestions: comment on that line\n+            - For multi-line suggestions: use start_line and line parameters\n+              Example: -F 'comments[][start_line]=10' -F 'comments[][line]=15'\n+              This comments on lines 10-15 and your suggestion replaces all of them\n+            - Always use side=\"RIGHT\" to comment on the PR changes\n+\n+          BEST PRACTICES:\n+            1. Review the ENTIRE diff before starting to comment\n+            2. Build the review.json file as you go through the code\n+            3. Be constructive - explain WHY, not just WHAT\n+            4. Prioritize critical issues (security, bugs) over style\n+            5. Use \"COMMENT\" event for suggestions (not REQUEST_CHANGES)\n+            6. If the review is too large (>20 comments), focus on most important\n+            7. Include positive feedback in strengths section\n+            8. Make suggestions actionable and specific\n+            9. Validate JSON syntax before submitting (use jq . review.json)\n+            10. Test with a small review first if unsure\n+\n+          COMMON MISTAKES TO AVOID:\n+            - Don't use language tags in suggestion blocks (no \\`\\`\\`go)\n+            - Don't forget to get the commit SHA first\n+            - Don't post individual comments - batch them in ONE review\n+            - Don't use -f for line numbers, use -F (uppercase)\n+            - Don't comment on unchanged lines (use side=\"RIGHT\")\n+            - Don't include more context than needed in suggestion blocks\n+            - Don't suggest changes to test files that mock prod behavior\n+            - Don't nitpick formatting if it follows project style\n+\n+          ERROR HANDLING:\n+            Before submitting the review:\n+            1. Validate JSON syntax: jq . review.json\n+            2. Check that GH_TOKEN is set: echo \\$GH_TOKEN\n+            3. Verify commit SHA is valid: echo \\$COMMIT_SHA\n+            4. Test API access: gh api user --jq '.login'\n+\n+            If gh api fails:\n+            1. Check error message for specific issue\n+            2. Verify file paths are relative to repo root (no leading /)\n+            3. Ensure line numbers exist in the PR diff\n+            4. Check that side=\"RIGHT\" for changed code\n+            5. As last resort, post a summary comment explaining the findings\n+\n+          EOF\n+          )\n+\n+          # Output the prompt\n+          {\n+            echo \"task_prompt<<EOFOUTPUT\"\n+            echo \"${TASK_PROMPT}\"\n+            echo \"EOFOUTPUT\"\n+          } >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Checkout create-task-action\n+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Best Practice:** Consider pinning to a specific commit SHA rather than the `main` branch for better reproducibility and security.\n\nUsing `ref: main` means the workflow behavior can change unexpectedly if the action is updated. Pinning to a commit SHA ensures consistent behavior and allows you to review changes before updating.\n\n```suggestion\n          ref: main  # TODO: Pin to commit SHA for reproducibility (e.g., abc123def456...)\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165404",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165404"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165404"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165404/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 352,
-          "position": 383,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996405",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165397",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165397,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmV",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |\n+          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n+          echo \"repo=${{ github.event.repository.name }}\" >> \"${GITHUB_OUTPUT}\"\n+\n+      - name: Build code review prompt\n+        id: build-prompt\n+        env:\n+          PR_URL: ${{ steps.determine-context.outputs.pr_url }}\n+          PR_NUMBER: ${{ steps.determine-context.outputs.pr_number }}\n+          REPO_OWNER: ${{ steps.repo-info.outputs.owner }}\n+          REPO_NAME: ${{ steps.repo-info.outputs.repo }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Issue:** Missing error handling directives. This is especially important for the heredoc block that follows.\n\n```suggestion\n        run: |\n          set -euo pipefail\n          echo \"Building code review prompt for PR #${PR_NUMBER}\"\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165397",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165397"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165397"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165397/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 115,
-          "position": 127,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996269",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165395",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165395,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmT",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"pr_number=${GITHUB_EVENT_PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          else\n+            echo \"::error::Unsupported event type: ${GITHUB_EVENT_NAME}\"\n+            exit 1\n+          fi\n+\n+      - name: Extract repository info\n+        id: repo-info\n+        run: |",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Issue:** Missing error handling directives for this shell script block.\n\n```suggestion\n        run: |\n          set -euo pipefail\n          echo \"owner=${{ github.repository_owner }}\" >> \"${GITHUB_OUTPUT}\"\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165395",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165395"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165395"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165395/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 103,
-          "position": 115,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996135",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165388",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165388,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmM",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n+            echo \"pr_number=${PR_NUMBER}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          elif [[ \"${GITHUB_EVENT_NAME}\" == \"pull_request\" ]]; then\n+            GITHUB_USER_ID=${GITHUB_EVENT_SENDER_ID}\n+            echo \"Using label adder: ${GITHUB_EVENT_SENDER_LOGIN} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_EVENT_SENDER_LOGIN}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${GITHUB_EVENT_PR_HTML_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Issue:** Variable should be quoted for consistency and safety with special characters.\n\n```suggestion\n            ISSUE_URL=\"${GITHUB_EVENT_PR_HTML_URL/\\/pull\\//\\/issues\\/}\"\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165388",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165388"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165388"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165388/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 92,
-          "position": 101,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101996004",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165384",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165384,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmI",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n+            echo \"pr_url=${ISSUE_URL}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            # Extract PR number from URL for later use\n+            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Security:** Potential command injection via unvalidated user input in regex. The `INPUTS_PR_URL` comes directly from user input and is used in a grep pattern without validation.\n\n**Recommendation:** Validate URL format before extraction to prevent unexpected behavior with malformed URLs.\n\n```suggestion\n            # Validate PR URL format before processing\n            if [[ ! \"${INPUTS_PR_URL}\" =~ ^https://github\\.com/[^/]+/[^/]+/pull/[0-9]+$ ]]; then\n              echo \"::error::Invalid PR URL format: ${INPUTS_PR_URL}. Expected format: https://github.com/owner/repo/pull/NUMBER\"\n              exit 1\n            fi\n            PR_NUMBER=$(echo \"${INPUTS_PR_URL}\" | grep -oP '(?<=pull/)\\d+')\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165384",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165384"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165384"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165384/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 81,
-          "position": 90,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
-    },
-    {
-      "id": "5101995896",
-      "type": "PullRequestReviewCommentEvent",
-      "actor": {
-        "id": 176868952,
-        "login": "DevelopmentCats",
-        "display_login": "DevelopmentCats",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/DevelopmentCats",
-        "avatar_url": "https://avatars.githubusercontent.com/u/176868952?"
-      },
-      "repo": {
-        "id": 440752086,
-        "name": "coder/coder",
-        "url": "https://api.github.com/repos/coder/coder"
-      },
-      "payload": {
-        "action": "created",
-        "comment": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165382",
-          "pull_request_review_id": 3541527967,
-          "id": 2590165382,
-          "node_id": "PRRC_kwDOGkVX1s6aYsmG",
-          "diff_hunk": "@@ -0,0 +1,394 @@\n+# This workflow performs AI-powered code review on PRs.\n+# It creates a Coder Task that uses AI to analyze PR changes,\n+# review code quality, identify issues, and post committable suggestions.\n+#\n+# The AI agent posts a single review with inline comments using GitHub's\n+# native suggestion syntax, allowing one-click commits of suggested changes.\n+#\n+# Triggered by: Adding the \"code-review\" label to a PR, or manual dispatch.\n+#\n+# Required secrets:\n+#   - DOC_CHECK_CODER_URL: URL of your Coder deployment (shared with doc-check)\n+#   - DOC_CHECK_CODER_SESSION_TOKEN: Session token for Coder API (shared with doc-check)\n+\n+name: AI Code Review\n+\n+on:\n+  pull_request:\n+    types:\n+      - labeled\n+  workflow_dispatch:\n+    inputs:\n+      pr_url:\n+        description: \"Pull Request URL to review\"\n+        required: true\n+        type: string\n+      template_preset:\n+        description: \"Template preset to use\"\n+        required: false\n+        default: \"\"\n+        type: string\n+\n+jobs:\n+  code-review:\n+    name: AI Code Review\n+    runs-on: ubuntu-latest\n+    if: |\n+      (github.event.label.name == 'code-review' || github.event_name == 'workflow_dispatch') &&\n+      (github.event.pull_request.draft == false || github.event_name == 'workflow_dispatch')\n+    timeout-minutes: 30\n+    env:\n+      CODER_URL: ${{ secrets.DOC_CHECK_CODER_URL }}\n+      CODER_SESSION_TOKEN: ${{ secrets.DOC_CHECK_CODER_SESSION_TOKEN }}\n+    permissions:\n+      contents: read # Read repository contents and PR diff\n+      pull-requests: write # Post review comments and suggestions\n+      actions: write # Create workflow summaries\n+\n+    steps:\n+      - name: Determine PR Context\n+        id: determine-context\n+        env:\n+          GITHUB_ACTOR: ${{ github.actor }}\n+          GITHUB_EVENT_NAME: ${{ github.event_name }}\n+          GITHUB_EVENT_PR_HTML_URL: ${{ github.event.pull_request.html_url }}\n+          GITHUB_EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}\n+          GITHUB_EVENT_SENDER_ID: ${{ github.event.sender.id }}\n+          GITHUB_EVENT_SENDER_LOGIN: ${{ github.event.sender.login }}\n+          INPUTS_PR_URL: ${{ inputs.pr_url }}\n+          INPUTS_TEMPLATE_PRESET: ${{ inputs.template_preset || '' }}\n+          GH_TOKEN: ${{ github.token }}\n+        run: |\n+          echo \"Using template preset: ${INPUTS_TEMPLATE_PRESET}\"\n+          echo \"template_preset=${INPUTS_TEMPLATE_PRESET}\" >> \"${GITHUB_OUTPUT}\"\n+\n+          # For workflow_dispatch, use the provided PR URL\n+          if [[ \"${GITHUB_EVENT_NAME}\" == \"workflow_dispatch\" ]]; then\n+            if ! GITHUB_USER_ID=$(gh api \"users/${GITHUB_ACTOR}\" --jq '.id'); then\n+              echo \"::error::Failed to get GitHub user ID for actor ${GITHUB_ACTOR}\"\n+              exit 1\n+            fi\n+            echo \"Using workflow_dispatch actor: ${GITHUB_ACTOR} (ID: ${GITHUB_USER_ID})\"\n+            echo \"github_user_id=${GITHUB_USER_ID}\" >> \"${GITHUB_OUTPUT}\"\n+            echo \"github_username=${GITHUB_ACTOR}\" >> \"${GITHUB_OUTPUT}\"\n+\n+            echo \"Using PR URL: ${INPUTS_PR_URL}\"\n+            # Convert /pull/ to /issues/ for create-task-action compatibility\n+            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"",
-          "path": ".github/workflows/code-review.yaml",
-          "commit_id": "647b6106367705491646be301323fed90ebc1527",
-          "original_commit_id": "2fea873139fec8df57b5bcbf0ff2737611683b06",
-          "user": {
-            "login": "DevelopmentCats",
-            "id": 176868952,
-            "node_id": "U_kgDOCorOWA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/176868952?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DevelopmentCats",
-            "html_url": "https://github.com/DevelopmentCats",
-            "followers_url": "https://api.github.com/users/DevelopmentCats/followers",
-            "following_url": "https://api.github.com/users/DevelopmentCats/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DevelopmentCats/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DevelopmentCats/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DevelopmentCats/subscriptions",
-            "organizations_url": "https://api.github.com/users/DevelopmentCats/orgs",
-            "repos_url": "https://api.github.com/users/DevelopmentCats/repos",
-            "events_url": "https://api.github.com/users/DevelopmentCats/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DevelopmentCats/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "body": "**Issue:** Variable should be quoted to safely handle URLs with special characters or spaces.\n\nWhile URLs shouldn't have spaces, defensive quoting is a shell scripting best practice.\n\n```suggestion\n            ISSUE_URL=\"${INPUTS_PR_URL/\\/pull\\//\\/issues\\/}\"\n```",
-          "created_at": "2025-12-04T18:38:23Z",
-          "updated_at": "2025-12-04T18:38:23Z",
-          "html_url": "https://github.com/coder/coder/pull/21103#discussion_r2590165382",
-          "pull_request_url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "_links": {
-            "self": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/comments/2590165382"
-            },
-            "html": {
-              "href": "https://github.com/coder/coder/pull/21103#discussion_r2590165382"
-            },
-            "pull_request": {
-              "href": "https://api.github.com/repos/coder/coder/pulls/21103"
-            }
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/coder/coder/pulls/comments/2590165382/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "original_position": 77,
-          "position": 86,
-          "subject_type": "line"
-        },
-        "pull_request": {
-          "url": "https://api.github.com/repos/coder/coder/pulls/21103",
-          "id": 3072227415,
-          "number": 21103,
-          "head": {
-            "ref": "cat/code-review-task",
-            "sha": "647b6106367705491646be301323fed90ebc1527",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          },
-          "base": {
-            "ref": "main",
-            "sha": "05b02cf887448c6bb52faa055d63b4ca691e0a39",
-            "repo": {
-              "id": 440752086,
-              "url": "https://api.github.com/repos/coder/coder",
-              "name": "coder"
-            }
-          }
-        }
-      },
-      "public": true,
-      "created_at": "2025-12-04T18:38:23Z",
-      "org": {
-        "id": 95932066,
-        "login": "coder",
-        "gravatar_id": "",
-        "url": "https://api.github.com/orgs/coder",
-        "avatar_url": "https://avatars.githubusercontent.com/u/95932066?"
-      }
     }
   ],
-  "fetched_at": "2025-12-10T20:52:54.793492"
+  "fetched_at": "2025-12-11T02:41:26.872577"
 }
