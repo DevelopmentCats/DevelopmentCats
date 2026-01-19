@@ -3,15 +3,56 @@
     "username": "DevelopmentCats",
     "name": "DevCats",
     "bio": "Coding ideas into reality!",
-    "public_repos": 60,
+    "public_repos": 61,
     "followers": 2,
     "following": 2
   },
   "coder_stats": {
-    "prs": [],
+    "prs": [
+      {
+        "action": "labeled",
+        "title": "",
+        "number": 661,
+        "state": "",
+        "url": "",
+        "created_at": "2026-01-15T21:51:53Z"
+      },
+      {
+        "action": "merged",
+        "title": "",
+        "number": 617,
+        "state": "",
+        "url": "",
+        "created_at": "2026-01-13T20:12:11Z"
+      },
+      {
+        "action": "merged",
+        "title": "",
+        "number": 643,
+        "state": "",
+        "url": "",
+        "created_at": "2026-01-13T13:53:27Z"
+      },
+      {
+        "action": "closed",
+        "title": "",
+        "number": 543,
+        "state": "",
+        "url": "",
+        "created_at": "2025-11-18T21:56:51Z"
+      },
+      {
+        "action": "closed",
+        "title": "",
+        "number": 377,
+        "state": "",
+        "url": "",
+        "created_at": "2025-11-17T21:21:24Z"
+      }
+    ],
     "commits": [],
     "issues": [],
-    "total_prs": 0,
+    "total_prs": 9,
     "total_commits": 0,
     "total_issues": 0
   },
@@ -50,8 +91,76 @@
     ],
     "total_count": 9
   },
-  "recent_activity": [],
-  "updated_at": "2025-12-15T02:44:49.472263",
+  "recent_activity": [
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request opened:  in coder/create-task-action",
+      "date": "2026-01-15T22:13:38Z",
+      "url": ""
+    },
+    {
+      "type": "create",
+      "icon": "\ud83c\udf89",
+      "description": "Created branch in coder/create-task-action",
+      "date": "2026-01-15T22:13:09Z"
+    },
+    {
+      "type": "create",
+      "icon": "\ud83c\udf89",
+      "description": "Created branch in coder/coder",
+      "date": "2026-01-14T17:54:34Z"
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request closed:  in coder/registry",
+      "date": "2025-11-18T21:56:51Z",
+      "url": ""
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request closed:  in coder/registry",
+      "date": "2025-11-17T21:21:24Z",
+      "url": ""
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request closed:  in coder/registry",
+      "date": "2026-01-09T20:29:33Z",
+      "url": ""
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request closed:  in coder/registry",
+      "date": "2026-01-09T21:02:10Z",
+      "url": ""
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request opened:  in coder/registry",
+      "date": "2026-01-09T16:39:27Z",
+      "url": ""
+    },
+    {
+      "type": "create",
+      "icon": "\ud83c\udf89",
+      "description": "Created branch in coder/registry",
+      "date": "2026-01-09T16:33:43Z"
+    },
+    {
+      "type": "pr",
+      "icon": "\ud83c\udfaf",
+      "description": "Pull Request opened:  in coder/registry",
+      "date": "2026-01-08T19:26:27Z",
+      "url": ""
+    }
+  ],
+  "updated_at": "2026-01-19T02:50:01.485856",
   "instructions": {
     "note": "Use constants.py helpers for all badges - they guarantee working URLs",
     "guidelines": "Read scripts/ai_guidelines.md for styling and creative patterns",
